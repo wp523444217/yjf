@@ -75,10 +75,6 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
-    public function actionEmail()
-    {
-        return $this->render('email');
-    }
     /**
      * Logs in a user.
      *
