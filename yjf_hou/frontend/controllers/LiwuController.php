@@ -29,20 +29,19 @@ class LiwuController extends Controller
 
     public function actionAdd()
     {
-//        print_r($_POST);
-
             $l_img=$this->actionUpload($_FILES['l_img']);
             $db=Yii::$app->db;
-//            $sql="insert into fang_liwu VALUE ('','".$_POST['l_name']."','".$l_img."','".$_POST['l_money']."')";
             $query=$db->createCommand()->insert('fang_liwu',
                 [
                     'l_name'=>$_POST['l_name'],
                     'l_img'=>$l_img,
                     'l_money'=>$_POST['l_money'],
                 ])->execute();
-            if($query){
-                return $this->render('index');
-            }
+        if($query == 1){
+            echo "<script>alert('添加成功');location.href='?r=liwu/index';</script>";
+        }else{
+            echo "<script>alert('添加失败');</script>";exit();
+        }
     }
 
     public function actionShow()
@@ -50,8 +49,37 @@ class LiwuController extends Controller
         $db=Yii::$app->db;
         $sql="select * from  fang_liwu";
         $query=$db->createCommand($sql)->queryAll();
-        print_r($query);die;
+        return $this->render('show',['data'=>$query]);
     }
+
+    public function actionDel()
+    {
+        $id=$_GET['id'];
+        $db=Yii::$app->db;
+        $query=$db->createCommand()->delete('fang_liwu',"l_id=$id")->execute();
+        if($query == 1){
+            echo "<script>alert('删除成功');location.href='?r=liwu/show';</script>";
+        }else{
+            echo "<script>alert('删除失败');</script>";exit();
+        }
+    }
+    public function actionUpdate()
+    {
+        $db=Yii::$app->db;
+        if(count($_POST)==2)
+        {
+            $sql="update fang_liwu set l_name='".$_POST['l_name']."' where l_id=".$_POST['l_id'];
+        }else{
+            $sql="update fang_liwu set l_money='".$_POST['l_money']."' where l_id=".$_POST['l_id'];
+//            echo $sql;die;
+        }
+
+        $query=$db->createCommand($sql)->execute();
+        if($query){
+            echo 1;
+        }
+    }
+
     public function actionUpload($name){
         if($name['size']>2*1024*1024) die("文件太大，请重新上传");
         $arr=array('image/jpeg','image/jpg','image/gif');
