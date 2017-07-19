@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -598,3 +599,351 @@
 
 
 	<?php echo $content?>
+=======
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>有间房 - 每个人的直播平台</title>
+		<meta name="keywords" content="Bootstrap模版,Bootstrap模版下载,Bootstrap教程,Bootstrap中文" />
+		<meta name="description" content="站长素材提供Bootstrap模版,Bootstrap教程,Bootstrap中文翻译等相关Bootstrap插件下载" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- basic styles -->
+		<link href="style/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="style/css/font-awesome.min.css" />
+
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+
+		<!-- page specific plugin styles -->
+
+		<!-- fonts -->
+
+		<!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" /> -->
+
+		<!-- ace styles -->
+
+		<link rel="stylesheet" href="style/css/ace.min.css" />
+		<link rel="stylesheet" href="style/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="style/css/ace-skins.min.css" />
+
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+
+		<script src="style/js/ace-extra.min.js"></script>
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+		<!--[if lt IE 9]>
+		<script src="style/js/html5shiv.js"></script>
+		<script src="style/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	
+		<div class="navbar navbar-default" id="navbar">
+			<script type="text/javascript">
+				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="navbar-container" id="navbar-container">
+				<div class="navbar-header pull-left">
+					<a href="#" class="navbar-brand">
+						<small>
+							<i class="icon-leaf"></i>
+							ACE后台管理系统
+						</small>
+					</a><!-- /.brand -->
+				</div><!-- /.navbar-header -->
+
+				<div class="navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+						
+
+						<li class="light-blue">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<img class="nav-user-photo" src="style/img/user.jpg" alt="Jason's Photo" />
+								<span class="user-info">
+									<small>欢迎光临,</small>
+									Jason
+								</span>
+
+								<i class="icon-caret-down"></i>
+							</a>
+
+							<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li>
+									<a href="#">
+										<i class="icon-cog"></i>
+										设置
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="icon-user"></i>
+										个人资料
+									</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="#">
+										<i class="icon-off"></i>
+										退出
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul><!-- /.ace-nav -->
+				</div><!-- /.navbar-header -->
+			</div><!-- /.container -->
+		</div>
+
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="main-container-inner">
+				<a class="menu-toggler" id="menu-toggler" href="#">
+					<span class="menu-text"></span>
+				</a>
+
+				<div class="sidebar" id="sidebar">
+					<script type="text/javascript">
+						try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+					</script>
+
+					<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+						<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+							<button class="btn btn-success">
+								<i class="icon-signal"></i>
+							</button>
+
+							<button class="btn btn-info">
+								<i class="icon-pencil"></i>
+							</button>
+
+							<button class="btn btn-warning">
+								<i class="icon-group"></i>
+							</button>
+
+							<button class="btn btn-danger">
+								<i class="icon-cogs"></i>
+							</button>
+						</div>
+
+						<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+							<span class="btn btn-success"></span>
+
+							<span class="btn btn-info"></span>
+
+							<span class="btn btn-warning"></span>
+
+							<span class="btn btn-danger"></span>
+						</div>
+					</div><!-- #sidebar-shortcuts -->
+
+					<ul class="nav nav-list">
+						<li class="active">
+							<a href="index.html">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text"> 控制台 </span>
+							</a>
+						</li>
+
+					
+
+						<li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon-desktop"></i>
+								<span class="menu-text"> 用户管理 </span>
+
+								<b class="arrow icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="?r=user/show">
+										<i class="icon-double-angle-right"></i>
+										用户列表
+									</a>
+								</li>
+
+									
+
+								<li>
+									<a href="#" class="dropdown-toggle">
+										<i class="icon-double-angle-right"></i>
+
+										三级菜单
+										<b class="arrow icon-angle-down"></b>
+									</a>
+
+									<ul class="submenu">
+										<li>
+											<a href="#">
+												<i class="icon-leaf"></i>
+												第一级
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="dropdown-toggle">
+												<i class="icon-pencil"></i>
+
+												第四级
+												<b class="arrow icon-angle-down"></b>
+											</a>
+
+											<ul class="submenu">
+												<li>
+													<a href="#">
+														<i class="icon-plus"></i>
+														添加产品
+													</a>
+												</li>
+
+												<li>
+													<a href="#">
+														<i class="icon-eye-open"></i>
+														查看商品
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon-desktop"></i>
+								<span class="menu-text"> 礼物管理 </span>
+
+								<b class="arrow icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="?r=liwu/index">
+										<i class="icon-double-angle-right"></i>
+										添加礼物
+									</a>
+								</li>
+
+								<li>
+									<a href="?r=liwu/show">
+										<i class="icon-double-angle-right"></i>
+										礼物列表
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						
+						<li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon-desktop"></i>
+								<span class="menu-text"> 主播管理 </span>
+
+								<b class="arrow icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="elements.html">
+										<i class="icon-double-angle-right"></i>
+										申请主播列表
+									</a>
+								</li>
+								<li>
+									<a href="elements.html">
+										<i class="icon-double-angle-right"></i>
+										主播列表
+									</a>
+								</li>
+
+								
+							</ul>
+						</li>
+
+						<li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon-desktop"></i>
+								<span class="menu-text"> 权限管理 </span>
+
+								<b class="arrow icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="?r=user/show">
+										<i class="icon-double-angle-right"></i>
+										用户列表
+									</a>
+								</li>
+
+								<li>
+									<a href="?r=thority/show">
+										<i class="icon-double-angle-right"></i>
+										权限列表
+									</a>
+								</li>
+
+								<li>
+									<a href="?r=chara/show">
+										<i class="icon-double-angle-right"></i>
+										角色列表
+									</a>
+								</li>
+								
+							</ul>
+						</li>
+
+						<li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon-desktop"></i>
+								<span class="menu-text"> 直播分类 </span>
+
+								<b class="arrow icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="?r=type/add">
+										<i class="icon-double-angle-right"></i>
+										添加分类
+									</a>
+								</li>
+
+								<li>
+									<a href="?r=type/show">
+										<i class="icon-double-angle-right"></i>
+										分类列表
+									</a>
+								</li>
+
+								
+							</ul>
+						</li>
+					</ul><!-- /.nav-list -->
+
+					<div class="sidebar-collapse" id="sidebar-collapse">
+						<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+					</div>
+
+					<script type="text/javascript">
+						try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+					</script>
+				</div>
+	<?php echo $content?>
+>>>>>>> 14282773253f114d49bff41fc5d6bae17904c985
