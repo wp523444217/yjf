@@ -7,6 +7,7 @@ $params = array_merge(
 );
 
 return [
+
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
@@ -14,6 +15,7 @@ return [
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
+
         ],
         'user' => [
             'identityClass' => 'common\models\User',
