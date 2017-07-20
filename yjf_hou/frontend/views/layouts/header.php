@@ -68,31 +68,19 @@
 								<img class="nav-user-photo" src="style/img/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>欢迎光临,</small>
-									Jason
+									<?php
+                                    echo Yii::$app->session['username'];
+                                    ?>
 								</span>
 
 								<i class="icon-caret-down"></i>
 							</a>
 
 							<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
-								<li>
-									<a href="#">
-										<i class="icon-cog"></i>
-										设置
-									</a>
-								</li>
+
 
 								<li>
-									<a href="#">
-										<i class="icon-user"></i>
-										个人资料
-									</a>
-								</li>
-
-								<li class="divider"></li>
-
-								<li>
-									<a href="#">
+									<a href="?r=login/tuichu">
 										<i class="icon-off"></i>
 										退出
 									</a>
@@ -156,17 +144,13 @@
 								<span class="menu-text"> 控制台 </span>
 							</a>
 						</li>
-
-					
-
 						<li>
 							<a href="#" class="dropdown-toggle">
 								<i class="icon-desktop"></i>
-								<span class="menu-text"> 用户管理 </span>
-
+								<span class="menu-text"> RBAC </span>
 								<b class="arrow icon-angle-down"></b>
 							</a>
-
+							<!-- 用户 -->
 							<ul class="submenu">
 								<li>
 									<a href="?r=login/login">
@@ -174,54 +158,55 @@
 										用户列表
 									</a>
 								</li>
-
-									
-
+							<!-- 用户结束 -->
+							<!-- 角色 -->
 								<li>
 									<a href="#" class="dropdown-toggle">
-										<i class="icon-double-angle-right"></i>
-
-										三级菜单
+										<i class="icon-pencil"></i>
+										角色管理
 										<b class="arrow icon-angle-down"></b>
 									</a>
-
 									<ul class="submenu">
+										<li>
+											<a href="?r=user/show">
+												<i class="icon-leaf"></i>
+												角色列表
+											</a>
+										</li>
 										<li>
 											<a href="#">
 												<i class="icon-leaf"></i>
-												第一级
+												角色添加
 											</a>
-										</li>
-
-										<li>
-											<a href="#" class="dropdown-toggle">
-												<i class="icon-pencil"></i>
-
-												第四级
-												<b class="arrow icon-angle-down"></b>
-											</a>
-
-											<ul class="submenu">
-												<li>
-													<a href="#">
-														<i class="icon-plus"></i>
-														添加产品
-													</a>
-												</li>
-
-												<li>
-													<a href="#">
-														<i class="icon-eye-open"></i>
-														查看商品
-													</a>
-												</li>
-											</ul>
 										</li>
 									</ul>
 								</li>
+							<!-- 角色结束 -->
+							<!-- 权限 -->
+								<li>
+									<a href="#" class="dropdown-toggle">
+										<i class="icon-pencil"></i>
+										权限管理
+										<b class="arrow icon-angle-down"></b>
+									</a>
+									<ul class="submenu">
+										<li>
+											<a href="?r=user/show">
+												<i class="icon-leaf"></i>
+												权限列表
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="icon-leaf"></i>
+												权限添加
+											</a>
+										</li>
+									</ul>
+								</li>
+							<!-- 权限结束	 -->
 							</ul>
 						</li>
-						
 						<li>
 							<a href="#" class="dropdown-toggle">
 								<i class="icon-desktop"></i>

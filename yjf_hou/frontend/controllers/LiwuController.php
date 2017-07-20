@@ -17,7 +17,7 @@ use frontend\models\FangLiwu;
 /**
  * Site controller
  */
-class LiwuController extends Controller
+class LiwuController extends CommonController
 {
 	public $enableCsrfValidation = false;
 	//引用头部

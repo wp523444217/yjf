@@ -13,7 +13,7 @@ use yii\db\Query;
 /**
  * Site controller
  */
-class YonghuController extends Controller
+class YonghuController extends CommonController
 {
     public $enableCsrfValidation = false;
     //引用头部

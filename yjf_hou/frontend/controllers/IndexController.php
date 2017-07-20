@@ -10,7 +10,7 @@ use yii\filters\AccessControl;
 /**
  * Site controller
  */
-class IndexController extends Controller
+class IndexController extends CommonController
 {
 	//引用头部
     public $layout = "header";

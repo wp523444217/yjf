@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $data="你好，laravel!";
+    return view('welcome')->with('data',$data);
 });
