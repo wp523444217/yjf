@@ -255,7 +255,7 @@
 
 							<ul class="submenu">
 								<li>
-									<a href="elements.html">
+									<a href="?r=zhubo/sqlb">
 										<i class="icon-double-angle-right"></i>
 										申请主播列表
 									</a>
