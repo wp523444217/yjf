@@ -8,7 +8,7 @@
 								<h1>
 									<i class="icon-leaf green"></i>
 									<span class="red">一流</span>
-									<span class="white">应用</span>
+									<span class="white">App 直播</span>
 								</h1>
 								<h4 class="blue">&copy; 有间房</h4>
 							</div>
@@ -26,31 +26,27 @@
 
 											<div class="space-6"></div>
 
-											<form>
+											<form action="?r=login/login_do" method="post" id="loginForm">
 												<fieldset>
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="text" class="form-control" placeholder="请输入你的用户名" />
+															<input type="text" class="form-control" placeholder="请输入你的用户名" name="username" id="username"/>
 															<i class="icon-user"></i>
 														</span>
 													</label>
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="password" class="form-control" placeholder="请输入你的密码" />
+															<input type="password" class="form-control" placeholder="请输入你的密码" name="pwd" id="pwd"/>
 															<i class="icon-lock"></i>
 														</span>
 													</label>
 
+														<span class="error" style="display:none;" id="beError"></span>
 													<div class="space"></div>
 
 													<div class="clearfix">
-														<label class="inline">
-															<input type="checkbox" class="ace" />
-															<span class="lbl">记住我</span>
-														</label>
-
-														<button type="button" class="width-35 pull-right btn btn-sm btn-primary">
+														<button type="submit" class="width-35 pull-right btn btn-sm btn-primary">
 															<i class="icon-key"></i>
 															登录
 														</button>
@@ -149,29 +145,28 @@
 											<div class="space-6"></div>
 											<p> Enter your details to begin: </p>
 
-											<form>
+											<form id="loginForm" action="index.php?r=login/login_do">
 												<fieldset>
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="email" class="form-control" placeholder="Email" />
-															<i class="icon-envelope"></i>
-														</span>
-													</label>
-
-													<label class="block clearfix">
-														<span class="block input-icon input-icon-right">
-															<input type="text" class="form-control" placeholder="请输入你的.." />
+															<input type="text" class="form-control" placeholder="请输入你的用户名" id="username" name="id="email" name="email""/>
 															<i class="icon-user"></i>
 														</span>
 													</label>
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="password" class="form-control" placeholder="请输入你的.." />
+															<input type="password" class="form-control" placeholder="请输入你的密码" id="pwd" name="pwd"/>
 															<i class="icon-lock"></i>
 														</span>
 													</label>
-
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="text" class="form-control" placeholder="请输入你的邮箱" id="email" name="email"/>
+															<i class="icon-user"></i>
+														</span>
+													</label>
+													
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
 															<input type="password" class="form-control" placeholder="Repeat password" />
@@ -220,15 +215,44 @@
 		</div><!-- /.main-container -->
 
 		<!-- basic scripts -->
-
-		<!--[if !IE]> -->
-
-		<!-- <![endif]-->
-
-		<!--[if IE]>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<![endif]-->
-
+<script type="text/javascript">
+    $(function(){
+        //验证表单
+        $("#loginForm").validate({
+            /* onkeyup: false,
+             focusCleanup:true, */
+            rules: {
+                pwd: {
+                    required: true
+                }
+            },
+            messages: {
+                pwd: {
+                    required: "请输入密码"
+                }
+            },
+            submitHandler:function(form){
+                var username = $('#username').val();
+                var pwd = $('#pwd').val();
+                $(form).find(":submit").attr("disabled", true);
+                $.ajax({
+                    type:'POST',
+                    data:{username:username,pwd:pwd},
+//                    url:ctx+'/user/login.json'
+                    dataType:'json',
+                    url:'index.php?r=login/login_do',
+                    success:function(msg){
+                        if(msg.success){
+                            location.href=msg.url;
+                        }else{
+                            $('#beError').text(msg.msg).show();
+                        }
+                    }
+                })
+            }
+        });
+    })
+</script>
 		<!--[if !IE]> -->
 
 		<script type="text/javascript">
@@ -255,6 +279,8 @@
 			 jQuery('#'+id).addClass('visible');
 			}
 		</script>
+	
 	<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+
 </body>
 </html>

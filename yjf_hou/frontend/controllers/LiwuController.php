@@ -2,6 +2,7 @@
 namespace frontend\controllers;
 
 use Yii;
+use yii\data\Pagination;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
@@ -11,7 +12,7 @@ use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
-use frontend\models\ContactForm;
+use frontend\models\FangLiwu;
 
 /**
  * Site controller
@@ -44,12 +45,23 @@ class LiwuController extends Controller
         }
     }
 
+
     public function actionShow()
     {
-        $db=Yii::$app->db;
-        $sql="select * from  fang_liwu";
-        $query=$db->createCommand($sql)->queryAll();
-        return $this->render('show',['data'=>$query]);
+
+        $user = new \app\models\FangLiwu();
+        // 查询总数
+        $user_count = $user->find()->count();
+        $data['pages'] = new Pagination(['totalCount' => $user_count]);
+        // 设置每页显示多少条
+         $data['pages']->defaultPageSize =4;
+        $user_list = $user->find()->offset($data['pages']->offset)->limit($data['pages']->limit)->asArray()->all();
+        $data['pages']->params=array("tab"=>'all');
+
+        return $this->render('show',[
+            'data' => $data,
+            'user_list' => $user_list,
+        ]);
     }
 
     public function actionDel()

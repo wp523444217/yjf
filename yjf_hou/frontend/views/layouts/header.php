@@ -180,13 +180,13 @@
 									</a>
 									<ul class="submenu">
 										<li>
-											<a href="?r=user/show">
+											<a href="?r=chara/show">
 												<i class="icon-leaf"></i>
 												角色列表
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="?r=chara/add">
 												<i class="icon-leaf"></i>
 												角色添加
 											</a>
@@ -203,13 +203,13 @@
 									</a>
 									<ul class="submenu">
 										<li>
-											<a href="?r=user/show">
+											<a href="?r=thority/show">
 												<i class="icon-leaf"></i>
 												权限列表
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="?r=thority/add">
 												<i class="icon-leaf"></i>
 												权限添加
 											</a>
@@ -261,7 +261,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="elements.html">
+									<a href="?r=zhubo/show">
 										<i class="icon-double-angle-right"></i>
 										主播列表
 									</a>
@@ -270,40 +270,6 @@
 								
 							</ul>
 						</li>
-
-						<li>
-							<a href="#" class="dropdown-toggle">
-								<i class="icon-desktop"></i>
-								<span class="menu-text"> 权限管理 </span>
-
-								<b class="arrow icon-angle-down"></b>
-							</a>
-
-							<ul class="submenu">
-								<li>
-									<a href="?r=user/show">
-										<i class="icon-double-angle-right"></i>
-										用户列表
-									</a>
-								</li>
-
-								<li>
-									<a href="?r=thority/show">
-										<i class="icon-double-angle-right"></i>
-										权限列表
-									</a>
-								</li>
-
-								<li>
-									<a href="?r=chara/show">
-										<i class="icon-double-angle-right"></i>
-										角色列表
-									</a>
-								</li>
-								
-							</ul>
-						</li>
-
 						<li>
 							<a href="#" class="dropdown-toggle">
 								<i class="icon-desktop"></i>
