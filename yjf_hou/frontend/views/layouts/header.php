@@ -169,7 +169,7 @@
 
 							<ul class="submenu">
 								<li>
-									<a href="?r=user/show">
+									<a href="?r=login/login">
 										<i class="icon-double-angle-right"></i>
 										用户列表
 									</a>
@@ -264,7 +264,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="elements.html">
+									<a href="?r=zhubo/show">
 										<i class="icon-double-angle-right"></i>
 										主播列表
 									</a>

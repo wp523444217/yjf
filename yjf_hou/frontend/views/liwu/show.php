@@ -1,15 +1,5 @@
 <?php
-$page=empty($_GET['page'])?"1":$_GET['page'];
-$l=5;
-$zong=count($data);
-$pian=($page-1)*$l;
-$ye=ceil($zong/$l);
-//echo $ye;die;
-$data=array_slice($data,$pian,$l);
 
-$shang=($page-1)<1?"1":$page-1;
-
-$xia=$page+1>$ye?$ye:$page+1;
 ?>
 
 <center>
@@ -41,7 +31,7 @@ $xia=$page+1>$ye?$ye:$page+1;
 												</thead>
 
 												<tbody id="tbod">
-                                                <?php foreach($data as $k=>$v){?>
+                                                <?php foreach($user_list as $k=>$v){?>
 													<tr  att="<?php echo $v['l_id']?>">
 													    <td><?= $v['l_id']?></td>
 														<td><span class="l_name" ar="<?= $v['l_name']?>"><?= $v['l_name']?></span></td>
@@ -67,12 +57,15 @@ $xia=$page+1>$ye?$ye:$page+1;
                                                 <?php }?>
 												</tbody>
 											</table>
-                                            <div class="dataTables_paginate paging_bootstrap">
-                                            <a href="?r=liwu/show&page=1">首页</a>
-                                            <a href="?r=liwu/show&page=<?= $shang?>">上一页</a>
-                                            <a href="?r=liwu/show&page=<?= $xia?>">下一页</a>
-                                            <a href="?r=liwu/show&page=<?= $ye?>">尾页</a>
-                                                </div>
+                                            <div class="pagination-part">
+                                                <nav>
+                                                    <?php
+                                                    echo yii\widgets\LinkPager::widget([
+                                                        'pagination' => $data['pages'],
+                                                    ]);
+                                                    ?>
+                                                </nav>
+                                            </div>
 										</div><!-- /.table-responsive -->
 									</div><!-- /span -->
 								</div><!-- /row -->
@@ -80,6 +73,7 @@ $xia=$page+1>$ye?$ye:$page+1;
 							</div><!-- /.col -->
 						</div><!-- /.row -->
 					</div>
+
 </center>
 <script type="text/javascript">
     $(document).on("click",".l_name",function(){
