@@ -39,7 +39,7 @@
 														<td><?=$v["add_time"]?></td>
 														<td>
 															<div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
-																<a href="?r=thority/update&id=<?=$v['c_id']?>">修改</a>
+																<a href="?r=chara/update&id=<?=$v['c_id']?>">修改</a>
 															</div>
 														</td>
 													</tr>
@@ -56,7 +56,7 @@
 </center>
 <script type="text/javascript">
 	//即点即改 -- 点
-	$(".t_name").on("click",function(){
+	$(".c_name").on("click",function(){
 		if(!$(this).children().attr('class')){
 			var name = $(this).html();
 			var input = "<input type = 'text' class='blur' value='"+name+"' />";
@@ -68,13 +68,14 @@
 		var n_name = $(this).val();
 		var id = $(this).parent().attr("myid");
 		var obj = $(this);
+		obj.parent().html(n_name);
 		$.ajax({
 		    type: "GET",
-		    url: "?r=thority/update",
-		    data: "id="+id+"&t_name="+n_name,
+		    url: "?r=chara/update",
+		    data: "id="+id+"&c_name="+n_name,
 		    success: function(msg){
 		   		if(msg){
-	   				obj.parent().html(n_name);
+	   				
 	   			}
 		    }
 		});
