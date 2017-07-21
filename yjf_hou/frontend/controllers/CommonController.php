@@ -24,7 +24,7 @@ class CommonController extends Controller
         if(empty(Yii::$app->session['username'])){
             echo "<script>alert('请先登录');location.href='?r=login/login';</script>";
         }
-//        $this->rbac();
+       $this->rbac();
 
     }
     //权限控制
