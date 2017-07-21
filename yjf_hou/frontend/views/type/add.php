@@ -12,7 +12,7 @@
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 
-								<form class="form-horizontal" role="form" action="" method="post" onsubmit="return submitTest();">
+								<form class="form-horizontal" role="form" action="" enctype="multipart/form-data" method="post" onsubmit="return submitTest();">
 									<div class="form-group">
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 直播分类： </label>
 
@@ -51,7 +51,14 @@
 											</select>
 										</div>
 									</div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 分类图片： </label>
 
+                                        <div class="col-sm-9">
+                                            <input type="file" name="img" class="col-xs-10 col-sm-5"/>
+
+                                        </div>
+                                    </div>
 
 									<div class="clearfix form-actions">
 

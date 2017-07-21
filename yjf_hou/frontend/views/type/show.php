@@ -22,6 +22,7 @@
 														<th>是否显示</th>
 														<th>排序</th>
 														<th>上级分类</th>
+                                                        <th>分类图片</th>
 														<th>添加时间</th>
 														<th>操作</th>
 													</tr>
@@ -37,6 +38,7 @@
 														<?php endif ?></td>
 														<td class="hidden-480"><?=$v["t_sort"]?></td>
 														<td>顶级分类</td>
+                                                        <td><img src="<?=$v['img']?>" alt="" width="100px" height="50px"/></td>
 														<td><?=$v["add_time"]?></td>
 														<td>
 															<div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
@@ -47,6 +49,8 @@
 													</tr>
 													<?php if ($v["san"]): ?>
 														<?php foreach ($v["san"] as $ks => $vs): ?>
+
+                                                            <? print_r($v['san']);die;?>
 															<tr>
 																<td class="t_name" myid="<?=$vs['t_id']?>"><?=$vs["t_name"];?></td>
 																<td><?php if ($vs["t_state"]): ?>显示
@@ -54,8 +58,10 @@
 																<?php endif ?></td>
 																<td class="hidden-480"><?=$vs["t_sort"]?></td>
 																<td class="<?=$data[$k]['t_id']?>"><?=$data[$k]["t_name"]?></td>
-																<td><?=$vs["add_time"]?></td>
-																<td>
+                                                                <td><img src="<?=$v['img']?>" alt="" width="100px" height="50px"/></td>
+
+                                                                <td><?=$vs["add_time"]?></td>
+                                                                <td>
 																	<div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
 																		<a href="?r=type/del&id=<?=$vs['t_id']?>">删除</a>
 																		<a href="?r=type/update&id=<?=$vs['t_id']?>">修改</a>

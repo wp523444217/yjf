@@ -6,8 +6,8 @@
 <!--[if gt IE 9]><!--> <html lang="zh-cmn-Hans"><!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>虎牙直播-中国领先的互动直播平台</title>
-    <base href="http://www.live.com/home/">
+    <title>八维直播平台。大众直播</title>
+    <base href="http://www.yjf.com/home/">
     <meta name="Keywords" content="lol直播,英雄联盟直播,dota2直播,dnf直播,cf直播,游戏直播,赛事直播,YY直播,美女直播,户外直播,视频直播,虎牙TV,虎牙直播,EDG"/>
     <meta name="Description" content="虎牙直播是中国领先的互动直播平台,可提供同时300万人在线高清观看、赛事直播与游戏直播，热门手游直播等。包含王者荣耀，球球大作战等热门手游直播，lol、dota2、dnf等热门游戏直播以及单机游戏、手游等游戏直播"/>
     <meta name="renderer" content="webkit">
