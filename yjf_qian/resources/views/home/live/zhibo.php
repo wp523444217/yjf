@@ -15,8 +15,7 @@
      <meta charset="utf-8">
 
 <title>在线直播_全部游戏直播_网络游戏直播 - 虎牙直播</title>
-    <base href="http://www.live.com/home/">
-
+    <base href="http://www.yjf.com/home/">
 <meta name="renderer" content="webkit">
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 

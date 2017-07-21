@@ -9,7 +9,7 @@
         <div class="page-content">
             <div class="page-header">
                 <h1>
-                    主播列表展示
+                    主播列表展示1
                 </h1>
             </div><!-- /.page-header -->
 
