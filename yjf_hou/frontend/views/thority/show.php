@@ -70,14 +70,13 @@
 		var n_name = $(this).val();
 		var id = $(this).parent().attr("myid");
 		var obj = $(this);
+		obj.parent().html(n_name);
 		$.ajax({
 		    type: "GET",
 		    url: "?r=thority/update",
 		    data: "id="+id+"&t_name="+n_name,
 		    success: function(msg){
-		   		if(msg){
-	   				obj.parent().html(n_name);
-	   			}
+
 		    }
 		});
 	});

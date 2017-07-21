@@ -67,9 +67,9 @@ class ThorityController extends CommonController
             $id = Yii::$app->request->get("id");
             $db = Yii::$app->db;
             $sql="select * from fang_thority where t_id={$id}";
-            $data=$db->createCommand($sql)->queryAll();
+            $data=$db->createCommand($sql)->queryOne();
             // var_dump($data);die;
-            return $this->render("update",["data"=>$data[0]]);
+            return $this->render("update",["data"=>$data]);
 
         }
     }

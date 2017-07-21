@@ -31,6 +31,7 @@ class CommonController extends Controller
     public function rbac()
     {
         $url=$this->module->requestedRoute;
+        //特殊路由
         if($url=="index/index" || $url==""){
             return true;
         }
@@ -38,6 +39,10 @@ class CommonController extends Controller
         $db=Yii::$app->db;
         // $username=Yii::$app->session['username'];
         $username="admin";
+        // 特殊用户
+        if($username == "admin"){
+            return true;
+        }
         $sql="select u_id from fang_user where username='{$username}'";
         $id=$db->createCommand($sql)->queryOne();
         $charaSql="select c_id from fang_userchara where u_id={$id["u_id"]}";
