@@ -8,7 +8,7 @@ use yii\web\Controller;
 /**
  * Site controller
  */
-class ZhuboController extends Controller
+class ZhuboController extends CommonController
 {
     public $enableCsrfValidation = false;
     //引用头部

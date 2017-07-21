@@ -8,7 +8,7 @@ use PHPMailer;
 /**
  * Site controller
  */
-class MailerController extends Controller
+class MailerController extends CommonController
 {
     /**
      * @inheritdoc

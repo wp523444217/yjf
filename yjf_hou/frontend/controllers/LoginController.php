@@ -16,7 +16,7 @@ class LoginController extends Controller
 {
     public $enableCsrfValidation = false;
 	//引用头部
-    public $layout = "header";
+    public $layout = false;
     /**
      * @inheritdoc
      */
@@ -41,11 +41,17 @@ class LoginController extends Controller
                   echo "<script>alert('密码验证错误');location.href='?r=login/login';</script>";
             }else{
                 $session = Yii::$app->session;
-                $session['username'] = $userinfo;
+                $session->set("username",$username);
                  echo "<script>alert('login成功');location.href='?r=yonghu/show';</script>";
             }
         }
       
+    }
+    public function actionTuichu()
+    {
+        $session=Yii::$app->session;
+        $session->remove('username');
+        echo "<script>location.href='?r=login/login';</script>";
     }
 
             
