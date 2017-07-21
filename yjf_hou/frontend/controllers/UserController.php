@@ -10,7 +10,7 @@ use yii\filters\AccessControl;
 /**
  * Site controller
  */
-class UserController extends Controller
+class UserController extends CommonController
 {
 	//引用头部
     public $layout = "header";
@@ -42,7 +42,7 @@ class UserController extends Controller
     //后台个人详细信息
     public function actionUserinfo($id){
     	$db=Yii::$app->db;
-        $userSql="select * from fang_user where u_id={$id}";
+        $userSql="select * from fang_user as u join fang_xinxi as x on u.u_id=x.u_id where u.u_id={$id}";
         $user=$db->createCommand($userSql)->queryOne();
         $user["pwd"]="*******";
         $user["chara"]="";

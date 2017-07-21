@@ -42,7 +42,7 @@ class LoginController extends Controller
             }else{
                 $session = Yii::$app->session;
                 $session->set("username",$username);
-                 echo "<script>alert('login成功');location.href='?r=yonghu/show';</script>";
+                 echo "<script>alert('login成功');location.href='?r=user/show';</script>";
             }
         }
       

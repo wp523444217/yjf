@@ -40,6 +40,27 @@
 									<label class="col-sm-2 control-label no-padding-right" for="form-field-1"><?=$user["email"]?></label>
 								</div>
 							</div>
+							<div class="col-xs-12">
+								<div class="form-group">
+									<label class="col-sm-1 control-label no-padding-right" for="form-field-1"> 我的电话： </label>
+
+									<label class="col-sm-2 control-label no-padding-right" for="form-field-1"><?=$user["x_tel"]?></label>
+								</div>
+							</div>
+							<div class="col-xs-12">
+								<div class="form-group">
+									<label class="col-sm-1 control-label no-padding-right" for="form-field-1"> 我的生日： </label>
+
+									<label class="col-sm-2 control-label no-padding-right" for="form-field-1"><?=$user["x_birthday"]?></label>
+								</div>
+							</div>
+							<div class="col-xs-12">
+								<div class="form-group">
+									<label class="col-sm-1 control-label no-padding-right" for="form-field-1"> 我的年龄： </label>
+
+									<label class="col-sm-2 control-label no-padding-right" for="form-field-1"><?=$user["x_age"]?></label>
+								</div>
+							</div>
 
 							<div class="col-xs-12">
 								<div class="form-group">
@@ -62,6 +83,13 @@
 									<label class="col-sm-1 control-label no-padding-right" for="form-field-1"> 拥有权限： </label>
 
 									<label class="col-sm-2 control-label no-padding-right" for="form-field-1"><?=$user["thority"]?></label>
+								</div>
+							</div>
+							<div class="col-xs-12">
+								<div class="form-group">
+									<label class="col-sm-1 control-label no-padding-right" for="form-field-1"> 用户说明： </label>
+
+									<label class="col-sm-2 control-label no-padding-right" for="form-field-1"><?=$user["x_desc"]?></label>
 								</div>
 							</div>
 

@@ -10,7 +10,7 @@ use yii\filters\AccessControl;
 /**
  * Site controller
  */
-class ThorityController extends Controller
+class ThorityController extends CommonController
 {
 	//引用头部
     public $layout = "header";

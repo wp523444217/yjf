@@ -91,40 +91,9 @@
                                         </fieldset>
                                     </form>
 
-                                    <div class="social-or-login center">
-                                        <span class="bigger-110">第三方登录直接登录</span>
-                                    </div>
 
-                                    <div class="social-login center">
-                                        <a class="btn btn-primary">
-                                            <i class="icon-facebook">1</i>
-                                        </a>
 
-                                        <a class="btn btn-info">
-                                            <i class="icon-twitter">2</i>
-                                        </a>
 
-                                        <a class="btn btn-danger">
-                                            <i class="icon-google-plus">3</i>
-                                        </a>
-                                    </div>
-                                </div><!-- /widget-main -->
-
-										<div class="toolbar clearfix">
-											<div>
-												<a href="#" onclick="show_box('forgot-box'); return false;" class="forgot-password-link">
-													<i class="icon-arrow-left"></i>
-													忘记密码
-												</a>
-											</div>
-
-											<div>
-												<a href="#" onclick="show_box('signup-box'); return false;" class="user-signup-link">
-													注册
-													<i class="icon-arrow-right"></i>
-												</a>
-											</div>
-										</div>
 									</div><!-- /widget-body -->
 								</div><!-- /login-box -->
 

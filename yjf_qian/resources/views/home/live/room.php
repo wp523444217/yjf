@@ -27,7 +27,7 @@
     <meta name="Keywords" content="骚男,骚男直播间,骚男直播地址,弟弟救我,英雄联盟主播,yy英雄联盟主播,虎牙tv"/>
 
     <title>骚男_90077骚男直播_虎牙直播</title>
-<base href="http://www.live.com/home/">
+<base href="http://www.yjf.com/home/">
     <link rel='canonical' href='http://www.huya.com/saonan'>
 
     <link type="text/css" rel="stylesheet" href="css/pages_modules_edf5626.css">
