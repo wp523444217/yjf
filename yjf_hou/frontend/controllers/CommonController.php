@@ -28,6 +28,7 @@ class CommonController extends Controller
 
     }
     //权限控制
+<<<<<<< HEAD
     public function rbac()
     {
         $url=$this->module->requestedRoute;
@@ -56,5 +57,19 @@ class CommonController extends Controller
             }
         }
         die("<script>alert('权限不够');location.href='?r=index/index'</script>");
+=======
+    public function rbac(){
+        $controller=$this->id;
+        $action=$this->action;
+        echo $controller."和".$action;die;
+        $db=Yii::$app->db;
+        $username=Yii::$app->session['username'];
+        $sql="select u_id from fang_user where username='{$username}'";
+        $id=$db->createCommand($sql)->queryOne();
+        var_dump($id);die;
+        $charaSql="select c_id from fang_userchara where u_id={$id}";
+
+
+>>>>>>> 4e18bc849376f8dce397991857985f49d7dfef4f
     }
 }
