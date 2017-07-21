@@ -4,7 +4,7 @@
 					<div class="page-content">
 						<div class="page-header">
 							<h1>
-								添加权限
+								权限修改
 							</h1>
 						</div><!-- /.page-header -->
 

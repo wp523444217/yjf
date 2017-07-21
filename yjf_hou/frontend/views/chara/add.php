@@ -17,7 +17,7 @@
 										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 角色名称： </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" name="t_name" placeholder="角色名称" class="col-xs-10 col-sm-5"/>
+											<input type="text" id="form-field-1" name="c_name" placeholder="角色名称" class="col-xs-10 col-sm-5"/>
 										</div>
 									</div>
 
@@ -26,17 +26,9 @@
 
 										<div class="col-sm-9">
 											<label class="col-sm-1 " for="form-field-1"> 是：</label>
-											<input type="radio" name="t_state" id="form-field-1" class="col-xs-1" value="1" checked="checked" />
+											<input type="radio" name="c_state" id="form-field-1" class="col-xs-1" value="1" checked="checked" />
 											<label class="col-sm-1 " for="form-field-1"> 否：</label>
-											<input type="radio" id="form-field-1" name="t_state" class="col-xs-1"  value="0"/>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 排序： </label>
-
-										<div class="col-sm-9">
-											<input type="text" name="t_sort" id="form-field-1" placeholder="0~50" class="col-xs-1"/>
+											<input type="radio" id="form-field-1" name="c_state" class="col-xs-1"  value="0"/>
 										</div>
 									</div>
 									<div class="form-group">
