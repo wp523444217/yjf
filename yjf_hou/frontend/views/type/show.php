@@ -30,15 +30,30 @@
 
 												<tbody id="tbox">
 												<div >
-												<?php foreach ($data as $k => $v): ?>
+												<?php foreach ($user_list as $k => $v): ?>
 													<tr>
 														<td myid="<?=$v['t_id']?>" class="t_name"><?=$v["t_name"];?></td>
 														<td><?php if ($v["t_state"]): ?>显示
 														<?php else: ?>不显示
 														<?php endif ?></td>
 														<td class="hidden-480"><?=$v["t_sort"]?></td>
-														<td>顶级分类</td>
-                                                        <td><img src="<?=$v['img']?>" alt="" width="100px" height="50px"/></td>
+														<td>
+
+                                                            <?php
+                                                                $dsn = "mysql:host=47.93.222.97;dbname=yjf";
+                                                                $db = new PDO($dsn, 'root', 'root');
+                                                                $db->query("set names utf8");
+                                                                $sql="SELECT * FROM `fang_type` where t_id=".$v['p_t_id'];
+                                                                $run= $db->query($sql)->fetch(PDO::FETCH_ASSOC);
+                                                                if($run['t_name']==""){
+                                                                    echo "顶级分类";
+                                                                }else{
+                                                                    echo $run['t_name'];
+                                                                }
+
+                                                            ?>
+                                                            </td>
+                                                        <td><img src="<?=$v['img']?>" alt="" width="100px" height="160px"/></td>
 														<td><?=$v["add_time"]?></td>
 														<td>
 															<div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
@@ -47,33 +62,19 @@
 															</div>
 														</td>
 													</tr>
-													<?php if ($v["san"]): ?>
-														<?php foreach ($v["san"] as $ks => $vs): ?>
-
-                                                            <? print_r($v['san']);die;?>
-															<tr>
-																<td class="t_name" myid="<?=$vs['t_id']?>"><?=$vs["t_name"];?></td>
-																<td><?php if ($vs["t_state"]): ?>显示
-																<?php else: ?>不显示
-																<?php endif ?></td>
-																<td class="hidden-480"><?=$vs["t_sort"]?></td>
-																<td class="<?=$data[$k]['t_id']?>"><?=$data[$k]["t_name"]?></td>
-                                                                <td><img src="<?=$v['img']?>" alt="" width="100px" height="50px"/></td>
-
-                                                                <td><?=$vs["add_time"]?></td>
-                                                                <td>
-																	<div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
-																		<a href="?r=type/del&id=<?=$vs['t_id']?>">删除</a>
-																		<a href="?r=type/update&id=<?=$vs['t_id']?>">修改</a>
-																	</div>
-																</td>
-															</tr>
-														<?php endforeach ?>
-													<?php endif ?>
 												<?php endforeach ?>
 												</div>
 												</tbody>
 											</table>
+                                            <div class="pagination-part">
+                                                <nav>
+                                                    <?php
+                                                    echo yii\widgets\LinkPager::widget([
+                                                        'pagination' => $data['pages'],
+                                                    ]);
+                                                    ?>
+                                                </nav>
+                                            </div>
 										</div><!-- /.table-responsive -->
 									</div><!-- /span -->
 								</div><!-- /row -->

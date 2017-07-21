@@ -2,11 +2,12 @@
 namespace frontend\controllers;
 
 use Yii;
+use yii\data\Pagination;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\AccessControl;
-
+use frontend\models\FangType;
 /**
  * Site controller
  */
@@ -21,20 +22,42 @@ class TypeController extends CommonController
     //后台直播分类展示
     public function actionShow()
     {
-    	$db = Yii::$app->db;
-    	$sql="select * from fang_type order by t_sort";
-    	$data=$db->createCommand($sql)->queryAll();
-    	$data=$this->actionRecu($data);
 
-    	// var_dump($data);die;
-        return $this->render("show",["data"=>$data]);
+        $user = new \app\models\FangType();
+        // 查询总数
+        $user_count = $user->find()->count();
+        $data['pages'] = new Pagination(['totalCount' => $user_count]);
+        // 设置每页显示多少条
+        $data['pages']->defaultPageSize =10;
+        $user_list = $user->find()->offset($data['pages']->offset)->limit($data['pages']->limit)->asArray()->all();
+        $data['pages']->params=array("tab"=>'all');
+
+
+        return $this->render('show',[
+            'data' => $data,
+            'user_list' => $user_list,
+        ]);
+
+//    	$db = Yii::$app->db;
+//    	$sql="select * from fang_type order by t_sort";
+//    	$data=$db->createCommand($sql)->queryAll();
+//    	$data=$this->actionRecu($data);
+//
+//    	// var_dump($data);die;
+//        return $this->render("show",["data"=>$data]);
     }
     //分类添加
     public function actionAdd(){
     	$db = Yii::$app->db;
     	if($post=Yii::$app->request->post()){
 
-            $img=$this->actionUpload($_FILES['img']);
+            if($_FILES['img']['name']!=""){
+
+                $img=$this->actionUpload($_FILES['img']);
+            }else{
+
+                $img="./images/2017-07-21/150062783310001.jpg";
+            }
     		$count=$db->createCommand()->insert("fang_type",
     			[
 	    			"t_name"=>$post["t_name"],
@@ -127,8 +150,8 @@ class TypeController extends CommonController
 
     public function actionUpload($name){
         if($name['size']>2*1024*1024) die("文件太大，请重新上传");
-        $arr=array('image/jpeg','image/jpg','image/gif');
-        if(!in_array($name['type'],$arr)) die("文件格式不正确");
+        $arr=array('image/jpeg','image/jpg','image/gif','image/png');
+        if(!in_array($name['type'],$arr));
         $time=date("Y-m-d",time());
         if(!file_exists("images/".$time))
         {
