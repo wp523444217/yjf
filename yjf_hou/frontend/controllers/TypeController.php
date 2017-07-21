@@ -25,6 +25,7 @@ class TypeController extends CommonController
     	$sql="select * from fang_type order by t_sort";
     	$data=$db->createCommand($sql)->queryAll();
     	$data=$this->actionRecu($data);
+
     	// var_dump($data);die;
         return $this->render("show",["data"=>$data]);
     }
@@ -32,11 +33,15 @@ class TypeController extends CommonController
     public function actionAdd(){
     	$db = Yii::$app->db;
     	if($post=Yii::$app->request->post()){
+
+            $img=$this->actionUpload($_FILES['img']);
     		$count=$db->createCommand()->insert("fang_type",
     			[
 	    			"t_name"=>$post["t_name"],
 	    			"p_t_id"=>$post["p_t_id"],
+                    "t_sort"=>$post["t_sort"],
 	    			"add_time"=>date("Y-m-d H:i:s"),
+	    			"img"=>$img,
     			])->execute();
     		if($count == 1){
     			echo "<script>alert('添加成功');location.href='?r=type/show';</script>";
@@ -120,5 +125,17 @@ class TypeController extends CommonController
 
 	}
 
-
+    public function actionUpload($name){
+        if($name['size']>2*1024*1024) die("文件太大，请重新上传");
+        $arr=array('image/jpeg','image/jpg','image/gif');
+        if(!in_array($name['type'],$arr)) die("文件格式不正确");
+        $time=date("Y-m-d",time());
+        if(!file_exists("images/".$time))
+        {
+            mkdir("images/".$time,0777,true);
+        }
+        $a="./images/".$time."/".time().$name['name'];
+        move_uploaded_file($name['tmp_name'],$a);
+        return $a;
+    }
 }
