@@ -23,6 +23,8 @@ Route::group(['namespace'=> 'Home'],function(){
     ]);
 	 //首页直播页面
 	 Route::get('/live','LiveController@index');
+	 //登录
+	 Route::get('/login','loginController@login');
 	 //个人中心
 	 Route::get('/per','ZhuController@index');
 	 //我的消息

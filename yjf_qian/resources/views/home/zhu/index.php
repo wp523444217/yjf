@@ -255,9 +255,12 @@
                         <input type="hidden" name="y2" id="y2" value="" />
                     </form>
                     <div class="user_info">
-                        <h2 style="font-size: 25px;" class="uesr_n">独钓江雪</h2>
-                                                    <span class="user_sex user_sex-female"></span>
-                                                
+
+                    
+                        <h2 style="font-size: 25px;" class="uesr_n"><?=$user->username?></h2>
+                        <?php if ($user->x_gender): ?><span class="user_sex user_sex-male"></span>
+                        <?php else: ?><span class="user_sex user_sex-female"></span>
+                        <?php endif ?>             
                         <!-- <p class="yy_num"><span>YY:</span><span id="YY">2009239504</span></p> -->
                                                 <!-- 非第三方登陆，显示修改昵称、密码 -->
                         <div class="change">
@@ -270,10 +273,9 @@
                         <a href="javascript:void(0);" class="change_w"></a>
                                                                         <p class="user_msg">
                             <span class="user_age">
-                                18岁</span>
-                            <span class="user_add">
-                                火星                            </span>
-                            <span class="user_ps">你还没编辑个性签名。</span>
+                                <?=$user->x_age?>岁</span>
+                            <span class=""><?=$user->x_birthday?></span>
+                            <span class="user_ps"><?=$user->x_desc?></span>
                         </p>
                         <div class="detail table-badge" id="grow_level">
                             <!-- <span style="background-position-y: -11px;" class="grow_level lv_1"></span> -->
@@ -341,6 +343,8 @@
                             </li>
                         </ul>
                     </div>
+
+
                 </div>
             </div>
             <!-- 经验值获取 -->

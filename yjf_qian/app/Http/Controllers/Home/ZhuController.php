@@ -12,7 +12,17 @@ class ZhuController extends Controller
 	//个人中心
     public function index()
     {
-    	return view('home/zhu/index');
+        $username = "admin";
+        $userdb = DB::table('fang_user');
+        $user = $userdb
+        ->join('fang_xinxi', 'fang_user.u_id', '=', 'fang_xinxi.u_id')
+        ->join('fang_zhubo', 'fang_user.u_id', '=', 'fang_zhubo.z_id')
+        ->where("fang_user.username",$username)
+        ->first();
+        // echo $user->username;
+        // var_dump($user);die;
+    	return view('home/zhu/index')
+        ->with(["user"=>$user]);
     }
     //我的消息
     public function msg() {

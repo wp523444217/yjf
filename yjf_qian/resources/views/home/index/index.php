@@ -49,7 +49,7 @@
                 <span class="hy-nav-link duya-header-on"><a href="http://www.huya.com/" class="hy-nav-title clickstat" eid="click/navi/home" eid_desc="点击/导航/首页">首页</a></span>
                 <span class="hy-nav-link"><a href="http://www.live.com/live" class="hy-nav-title hiido_stat clickstat"  hiido_code="10004221" eid="click/navi/zhibo" eid_desc="点击/导航/直播">直播</a></span>
                 <div class="hy-nav-expand">
-                    <div class="hy-nav-title nav-main" id="nav-main"><a href="http://www.huya.com/g">分类</a><i class="icon-arrow"></i></div>
+                    <div class="hy-nav-title nav-main" id="nav-main"><a href="http://www.yjf.com/type">分类</a><i class="icon-arrow"></i></div>
                     <div class="nav-expand-list nav-expand-game">
                         <i class="arrow"></i>
                     </div>
@@ -85,7 +85,7 @@
                     <div class="nav-expand-list nav-expand-kaibo">
                         <i class="arrow"></i>
                         <div class="kaibo-nav">
-                            <a target="_blank" href="http://www.live.com/per><i class="hy-nav-video-icon"></i><span>个人中心</span></a>
+                            <a target="_blank" href="http://www.live.com/per"><i class="hy-nav-video-icon"></i><span>个人中心</span></a>
                             <a target="_blank" href="#"><i class="hy-nav-home-icon"></i><span>公会入驻</span></a>
                         </div>
                     </div>
@@ -153,12 +153,73 @@
                     <div class="hy-nav-title">
                         <i class="hy-nav-icon hy-nav-login-icon"></i>
                         <div class="un-login-btn">
-                            <a class="clickstat" id="nav-login" href="#" eid="click/navi/sign" eid_desc="点击/导航/登录">登录</a>
+                            <a href="javascript:;" class="sign">登录</a>
                             <i>|</i>
-                            <a class="clickstat" id="nav-regiest" href="#" eid="click/navi/login" eid_desc="点击/导航/注册">注册</a>
+                             <a class="clickstat" id="nav-regiest" href="#" eid="click/navi/login" eid_desc="点击/导航/注册">注册</a>
                         </div>
+
+                        <script type="text/javascript">
+
+
+
+                        </script>
                     </div>
                 </div>
+
+
+<div class="box" style="display:black">
+    <div class="login-box">
+        <div class="login">
+            <div class="login-main">
+                <div class="login-hd">
+                    <a class="tab-btn">登录</a>
+                    <a class="tab-btn active">注册</a>
+                    <i class="line J_line" style="left: 80px;"></i>
+                </div>
+                <div class="login-bd">
+                    <div class="login-content">
+                        <div class="tab-unit" style="display: none;">
+                            <div id="login-tab">
+                                <h2 class="login-title">帐号登录</h2>
+                                <div id="udbsdk_login_content">
+                                    <div id="udbsdk_login_normal" class="udbsdk_login">
+                                        <iframe frameborder="0" allowtransparency="true" scrolling="no" src="about:blank" class="udbsdk_frm" id="udbsdk_frm_normal" yy_f2e_report="true" yy_f2e_src="about:blank"></iframe>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                        <div class="tab-unit" style="display: block;">
+                            <div class="register-tab" style="display: block;">               
+                                <iframe height="370" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+                                <!-- <div><a class="reg-by-mail" href="#">使用邮箱注册&gt;</a></div> -->
+                            </div>
+                            <div class="register-tab" style="display: none;">
+                                <iframe height="370" frameborder="0" allowtransparency="true" scrolling="no" src="about:blank"></iframe>
+                                <div><a href="#" class="reg-by-phone">使用手机注册&gt;</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="login-loading J_loading" style="display: inline;"></i>
+                </div>
+            </div>
+            <div class="login-sidebar">
+                <h2 class="title">合作账号登录</h2>
+                <div class="other-login">
+                    <a eid_desc="点击/导航/微信账号登录" eid="click/nav/weixinlogin" class="login-btn login-btn-wechat clickstat"><i class="icon"></i>微信帐号登录</a>
+                    <a login-type="qq" eid_desc="点击/导航/QQ账号登录" eid="click/nav/qqlogin" class="login-btn login-btn-qq clickstat"><i class="icon"></i>QQ帐号登录</a>
+                    <a login-type="weibo" eid_desc="点击/导航/新浪微博登录" eid="click/nav/weibologin" class="login-btn login-btn-weibo clickstat"><i class="icon"></i>微博帐号登录</a>
+                </div>
+            </div>
+        </div>
+        <a title="关闭" id="js-login-close" class="login-close"></a>
+        <p class="login-wran-tip">使用即为同意《<a title="虎牙软件用户协议" target="_blank" href="http://blog.huya.com/product/90" class="warn-link">虎牙软件用户协议</a>》</p>
+    </div>
+</div>
+
+
+
+
+
                 <div class="hy-nav-right nav-user success-login">
                     <a class="nav-user-title" href="http://i.huya.com/" target="_blank">
                         <img id="login-userAvatar" src="http://a.dwstatic.com/huya/main/img/10001.jpg" alt="头像" />
@@ -2285,7 +2346,72 @@ require.resourceMap({"res":{"h5player":{"url":"//a.dwstatic.com/huya/main/module
     document.write(function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
-__p+='<div class="huya-footer">\r\n    <div class="huya-footer__hd">\r\n        <dl class="huya-footer_friend">\r\n            <dt>友情链接</dt>\r\n            <dd><a href="http://www.duowan.com/" target="_blank">多玩游戏</a></dd>\r\n            <dd><a href="http://wan.yy.com/" target="_blank">YY游戏</a></dd>\r\n            <dd><a href="http://games.qq.com/" target="_blank">腾讯游戏频道</a></dd>\r\n            <dd><a href="http://www.pcgames.com.cn/" target="_blank">太平洋游戏</a></dd>\r\n            <dd><a href="http://www.ooqiu.com/" target="_blank">全球电竞网</a></dd>\r\n            <dd><a href="http://games.ifeng.com/esports/" target="_blank">凤凰游戏电竞</a></dd>\r\n            <dd><a href="http://www.aipai.com/" target="_blank">爱拍</a></dd>\r\n            <dd><a href="http://www.56.com/game" target="_blank">搜狐56视频</a></dd>\r\n            <dd><a href="http://games.iqiyi.com/" target="_blank">爱奇艺游戏</a></dd>\r\n            <dd><a href="http://video.duowan.com/" target="_blank">多玩视频</a></dd>\r\n            <dd><a href="http://www.hiyd.com/" target="_blank">Hi运动健身</a></dd>\r\n            <dd><a href="http://www.yy.com" target="_blank">视频直播</a></dd>\r\n        </dl>\r\n        <dl class="huya-footer_help">\r\n            <dt>主播帮助</dt>\r\n            <dd><a href="http://www.huya.com/e/zhubo" target="_blank">新人主播指引</a></dd>\r\n            <dd><a href="http://www.huya.com/download/#players_pc" target="_blank">开播工具下载</a></dd>\r\n            <dd><a href="http://help.huya.com/276" target="_blank">开播教程引导</a></dd>\r\n        </dl>\r\n        <div class="huya-footer_prod">\r\n            <h2>虎牙产品下载</h2>\r\n            <div class="huya-app_qrcode">\r\n                <div class="app_qrcode_img"></div>  \r\n                <p>扫描下载虎牙APP</p>\r\n            </div>\r\n            <ul class="huya-footer_prod_list">\r\n                <li><i class="huya-footer_iphone"></i><a href="http://www.huya.com/download/#iphone" target="_blank">iPhone版</a></li>\r\n                <li><i class="huya-footer_ipad"></i><a href="http://www.huya.com/download/#ipad" target="_blank">iPad版</a></li>\r\n                <li><i class="huya-footer_andriod"></i><a href="http://www.huya.com/download/#android" target="_blank">Andriod版</a></li>\r\n                <li><i class="huya-footer_pad"></i><a href="http://www.huya.com/download/#pad" target="_blank">Andriod Pad</a></li>\r\n                <!-- <li><i class="huya-footer_tv"></i><a href="http://www.huya.com/download/#tv" target="_blank">TV版</a></li> -->\r\n                <li><i class="huya-footer_pc"></i><a href="http://www.huya.com/download/#pc" target="_blank">PC版</a></li>\r\n                <li><i class="huya-footer_wp"></i><a href="http://www.huya.com/download/#wp" target="_blank">Win10版/WP版</a></li>\r\n            </ul>\r\n        </div>\r\n        <div class="huya-footer_other">\r\n            <h2>关注我们</h2>\r\n            <div class="huya-pub_number">\r\n                <div class="pub_number_img"></div>  \r\n                <p>扫描关注微信公众号</p>\r\n            </div>\r\n            <ul class="footer_other_list">\r\n                <li><i class="huya-footer_sina"></i><a href="http://weibo.com/90dwyy" target="_blank">虎牙官方微博</a></li>\r\n                <li><i class="huya-footer_qieba"></i><a href="http://tieba.baidu.com/f?ie=utf-8&kw=%E8%99%8E%E7%89%99%E7%9B%B4%E6%92%AD&fr=search" target="_blank">贴吧交流</a></li>\r\n                <li><a target="_blank" href="http://blog.huya.com/index.php?m=Announcement&do=show&type=notice&id=67">不良信息投诉与举报</a></li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n    <div class="huya-footer__bd">\r\n        <div class="huya-footer__nav">\r\n            <p>\r\n                <a target="_blank" href="http://www.huya.com/zt/usc/#about" class="clickstat" eid="click/home/yejiao/guanyu" eid_desc="点击/首页/页脚/关于虎牙">关于虎牙</a>|\r\n                <a target="_blank" href="http://hr.huya.com/" class="clickstat" eid="click/home/yejiao/joinus" eid_desc="点击/首页/页脚/加入我们">加入我们</a>|   \r\n                <a target="_blank" href="http://www.huya.com/zt/usc/#contact" class="clickstat" eid="click/home/yejiao/lianxi" eid_desc="点击/首页/页脚/合作联系">合作联系</a>|\r\n                <a target="_blank" href="http://www.huya.com/zt/usc/#sites" class="clickstat" eid="click/home/yejiao/youlian" eid_desc="点击/首页/页脚/友链">友情链接</a>|\r\n                <a target="_blank" href="http://www.huanju.cn/s/contact.html">广告热线：020-82120508</a>|\r\n                <a target="_blank" href="http://gm.duowan.com/user/center/centerOpen.do?product=HUYA&source=YY" class="clickstat" eid="click/home/yejiao/kefu" eid_desc="点击/首页/页脚/客服">在线客服</a>|\r\n                <a target="_blank" href="http://www.huanju.cn/1207/m_205349693256.html">隐私权保护政策</a>|\r\n                <a target="_blank" href="http://www.huanju.cn/1207/m_205353486825.html">版权保护投诉指引</a>\r\n            </p>\r\n            <p>\r\n                <span>增值电信业务经营许可证</span>\r\n                <a target="_blank" href="http://assets.dwstatic.com/common/docs/B2-20050785.jpg">粤B2-20050785</a>\r\n                <a target="_blank" href="http://assets.dwstatic.com/common/docs/B2-20120129.jpg">B2-20120129</a>|\r\n                <a target="_blank" href="http://a.dwstatic.com/huya/main/img/huya_wlwh_xkz.png">粤网文[2015]1712-302号</a>\r\n            </p>\r\n            <p>\r\n                <a target="_blank" href="http://www.miitbeian.gov.cn">粤ICP备16120983号-1</a>|\r\n                <span><img src="http://yyweb.yystatic.com/pc/images/company/j.gif" alt="">粤公网安备44011302000242号 </span>|\r\n                <a target="_blank" href="http://assets.dwstatic.com/common/docs/4401060100548.jpg">穗公网监备案证第4401060100548号</a>|\r\n                <a target="_blank" href="http://www.gdca.gov.cn/">广东省通信管理局</a>|\r\n                <a target="_blank" href="http://a.dwstatic.com/huya/main/img/huya_wl_xkz.png">网络出版服务许可证</a>|\r\n                <a target="_blank" href="http://a.dwstatic.com/huya/main/img/huya_jm2_xkz.jpg">节目制作经营许可证</a>\r\n            </p>\r\n        </div>\r\n        <div class="huya-footer__copyright">\r\n            <p>\r\n                <span>广州虎牙信息科技有限公司</span>\r\n                <span>&nbsp;版权所有&nbsp;©&nbsp;2016-2019&nbsp;</span>\r\n                <a target="_blank" href="http://www.huya.com/">huya.com</a>\r\n                <a target="_blank" href="http://jb.ccm.gov.cn/" class="clickstat" eid="click/home/yejiao/jubao" eid_desc="点击/首页/页脚/举报">12318全国文化市场举报网站</a>\r\n                <a target="_blank" href="http://www.12377.cn/" class="clickstat" eid="click/home/yejiao/jubao2" eid_desc="点击/首页/页脚/举报2">中国互联网不良信息举报中心</a>\r\n                <span>客服&举报电话：020-82120010</span>\r\n            </p>\r\n        </div>\r\n        <div class="huya-footer__hy-logo">\r\n            <img src="http://a.dwstatic.com/huya/main/img/hy-logo.png" width="322" height="46"/>\r\n            <a target="_blank" id="_pingansec_bottomimagesmall_brand" href="http://si.trustutn.org/info?sn=950170109026610628628&certType=1"><img src="http://a.dwstatic.com/huya/main/img/brand_bottom_small.jpg"/></a>\r\n        </div>\r\n    </div>\r\n</div>\r\n';
+__p+='<div class="huya-footer">\r\n
+        <div class="huya-footer__hd">\r\n 
+           <dl class="huya-footer_friend">\r\n
+           <dt>友情链接</dt>\r\n
+            <dd><a href="http://www.duowan.com/" target="_blank">多玩游戏</a></dd>\r\n
+            <dd><a href="http://wan.yy.com/" target="_blank">YY游戏</a></dd>\r\n            
+            <dd><a href="http://games.qq.com/" target="_blank">腾讯游戏频道</a></dd>\r\n            
+            <dd><a href="http://www.pcgames.com.cn/" target="_blank">太平洋游戏</a></dd>\r\n            
+            <dd><a href="http://www.ooqiu.com/" target="_blank">全球电竞网</a></dd>\r\n            
+            <dd><a href="http://games.ifeng.com/esports/" target="_blank">凤凰游戏电竞</a></dd>\r\n            
+            <dd><a href="http://www.aipai.com/" target="_blank">爱拍</a></dd>\r\n            
+            <dd><a href="http://www.56.com/game" target="_blank">搜狐56视频</a></dd>\r\n            
+            <dd><a href="http://games.iqiyi.com/" target="_blank">爱奇艺游戏</a></dd>\r\n            
+            <dd><a href="http://video.duowan.com/" target="_blank">多玩视频</a></dd>\r\n            
+            <dd><a href="http://www.hiyd.com/" target="_blank">Hi运动健身</a></dd>\r\n            
+            <dd><a href="http://www.yy.com" target="_blank">视频直播</a></dd>\r\n        
+            </dl>\r\n        <dl class="huya-footer_help">\r\n            
+            <dt>主播帮助</dt>\r\n            
+            <dd><a href="http://www.huya.com/e/zhubo" target="_blank">新人主播指引</a></dd>\r\n            
+            <dd><a href="http://www.huya.com/download/#players_pc" target="_blank">开播工具下载</a></dd>\r\n            
+            <dd><a href="http://help.huya.com/276" target="_blank">开播教程引导</a></dd>\r\n        </dl>\r\n        
+            <div class="huya-footer_prod">\r\n            <h2>虎牙产品下载</h2>\r\n            
+            <div class="huya-app_qrcode">\r\n                <div class="app_qrcode_img"></div>  \r\n                
+            <p>扫描下载虎牙APP</p>\r\n            </div>\r\n            <ul class="huya-footer_prod_list">\r\n                
+            <li><i class="huya-footer_iphone"></i><a href="http://www.huya.com/download/#iphone" target="_blank">iPhone版</a></li>\r\n                
+            <li><i class="huya-footer_ipad"></i><a href="http://www.huya.com/download/#ipad" target="_blank">iPad版</a></li>\r\n                
+            <li><i class="huya-footer_andriod"></i><a href="http://www.huya.com/download/#android" target="_blank">Andriod版</a></li>\r\n                
+            <li><i class="huya-footer_pad"></i><a href="http://www.huya.com/download/#pad" target="_blank">Andriod Pad</a></li>\r\n                
+            <!-- <li><i class="huya-footer_tv"></i><a href="http://www.huya.com/download/#tv" target="_blank">TV版</a></li> -->\r\n                
+            <li><i class="huya-footer_pc"></i><a href="http://www.huya.com/download/#pc" target="_blank">PC版</a></li>\r\n                
+            <li><i class="huya-footer_wp"></i><a href="http://www.huya.com/download/#wp" target="_blank">Win10版/WP版</a></li>\r\n            
+            </ul>\r\n        </div>\r\n        <div class="huya-footer_other">\r\n            <h2>关注我们</h2>\r\n            
+            <div class="huya-pub_number">\r\n                <div class="pub_number_img"></div>  \r\n                <p>扫描关注微信公众号</p>\r\n            
+            </div>\r\n            <ul class="footer_other_list">\r\n                
+            <li><i class="huya-footer_sina"></i><a href="http://weibo.com/90dwyy" target="_blank">虎牙官方微博</a></li>\r\n                
+            <li><i class="huya-footer_qieba"></i><a href="http://tieba.baidu.com/f?ie=utf-8&kw=%E8%99%8E%E7%89%99%E7%9B%B4%E6%92%AD&fr=search" target="_blank">贴吧交流</a></li>\r\n
+            <li><a target="_blank" href="http://blog.huya.com/index.php?m=Announcement&do=show&type=notice&id=67">不良信息投诉与举报</a></li>\r\n            
+            </ul>\r\n        </div>\r\n    </div>\r\n    <div class="huya-footer__bd">\r\n        <div class="huya-footer__nav">\r\n            
+            <p>\r\n                
+            <a target="_blank" href="http://www.huya.com/zt/usc/#about" class="clickstat" eid="click/home/yejiao/guanyu" eid_desc="点击/首页/页脚/关于虎牙">关于虎牙</a>|\r\n
+            <a target="_blank" href="http://hr.huya.com/" class="clickstat" eid="click/home/yejiao/joinus" eid_desc="点击/首页/页脚/加入我们">加入我们</a>|\r\n                
+            <a target="_blank" href="http://www.huya.com/zt/usc/#contact" class="clickstat" eid="click/home/yejiao/lianxi" eid_desc="点击/首页/页脚/合作联系">合作联系</a>|\r\n                
+            <a target="_blank" href="http://www.huya.com/zt/usc/#sites" class="clickstat" eid="click/home/yejiao/youlian" eid_desc="点击/首页/页脚/友链">友情链接</a>|\r\n                
+            <a target="_blank" href="http://www.huanju.cn/s/contact.html">广告热线：020-82120508</a>|\r\n                
+            <a target="_blank" href="http://gm.duowan.com/user/center/centerOpen.do?product=HUYA&source=YY" class="clickstat" eid="click/home/yejiao/kefu" eid_desc="点击/首页/页脚/客服">在线客服</a>|\r\n
+            <a target="_blank" href="http://www.huanju.cn/1207/m_205349693256.html">隐私权保护政策</a>|\r\n                
+            <a target="_blank" href="http://www.huanju.cn/1207/m_205353486825.html">版权保护投诉指引</a>\r\n            
+            </p>\r\n            <p>\r\n                
+            <span>增值电信业务经营许可证</span>\r\n                
+            <a target="_blank" href="http://assets.dwstatic.com/common/docs/B2-20050785.jpg">粤B2-20050785</a>\r\n                
+            <a target="_blank" href="http://assets.dwstatic.com/common/docs/B2-20120129.jpg">B2-20120129</a>|\r\n                
+            <a target="_blank" href="http://a.dwstatic.com/huya/main/img/huya_wlwh_xkz.png">粤网文[2015]1712-302号</a>\r\n            
+            </p>\r\n            <p>\r\n                <a target="_blank" href="http://www.miitbeian.gov.cn">粤ICP备16120983号-1</a>|\r\n                
+            <span><img src="http://yyweb.yystatic.com/pc/images/company/j.gif" alt="">粤公网安备44011302000242号 </span>|\r\n                
+            <a target="_blank" href="http://assets.dwstatic.com/common/docs/4401060100548.jpg">穗公网监备案证第4401060100548号</a>|\r\n                
+            <a target="_blank" href="http://www.gdca.gov.cn/">广东省通信管理局</a>|\r\n                
+            <a target="_blank" href="http://a.dwstatic.com/huya/main/img/huya_wl_xkz.png">网络出版服务许可证</a>|\r\n                
+            <a target="_blank" href="http://a.dwstatic.com/huya/main/img/huya_jm2_xkz.jpg">节目制作经营许可证</a>\r\n            </p>\r\n        </div>\r\n        
+            <div class="huya-footer__copyright">\r\n            <p>\r\n                <span>广州虎牙信息科技有限公司</span>\r\n                
+            <span>&nbsp;版权所有&nbsp;©&nbsp;2016-2019&nbsp;</span>\r\n                <a target="_blank" href="http://www.huya.com/">huya.com</a>\r\n                
+            <a target="_blank" href="http://jb.ccm.gov.cn/" class="clickstat" eid="click/home/yejiao/jubao" eid_desc="点击/首页/页脚/举报">12318全国文化市场举报网站</a>\r\n                
+            <a target="_blank" href="http://www.12377.cn/" class="clickstat" eid="click/home/yejiao/jubao2" eid_desc="点击/首页/页脚/举报2">中国互联网不良信息举报中心</a>\r\n                
+            <span>客服&举报电话：020-82120010</span>\r\n            </p>\r\n        </div>\r\n        
+            <div class="huya-footer__hy-logo">\r\n            <img src="http://a.dwstatic.com/huya/main/img/hy-logo.png" width="322" height="46"/>\r\n            
+            <a target="_blank" id="_pingansec_bottomimagesmall_brand" href="http://si.trustutn.org/info?sn=950170109026610628628&certType=1">
+            <img src="http://a.dwstatic.com/huya/main/img/brand_bottom_small.jpg"/></a>\r\n        </div>\r\n    </div>\r\n</div>\r\n';
 }
 return __p;
 }())
