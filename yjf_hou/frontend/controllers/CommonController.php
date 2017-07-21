@@ -24,14 +24,13 @@ class CommonController extends Controller
         if(empty(Yii::$app->session['username'])){
             echo "<script>alert('请先登录');location.href='?r=login/login';</script>";
         }
-        $this->rbac();
+//        $this->rbac();
 
     }
     //权限控制
     public function rbac(){
         $controller=$this->id;
         $action=$this->action;
-        if(!empay()){}
         echo $controller."和".$action;die;
         $db=Yii::$app->db;
         $username=Yii::$app->session['username'];
