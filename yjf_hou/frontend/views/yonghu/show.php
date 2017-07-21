@@ -3,7 +3,7 @@
 <div class="page-content">
 	<div class="page-header">
 		<h1>
-			用户信息展示
+			用户信息
 		</h1>
 	</div><!-- /.page-header -->
 
