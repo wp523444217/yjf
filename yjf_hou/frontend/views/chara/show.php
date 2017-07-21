@@ -3,7 +3,7 @@
 					<div class="page-content">
 						<div class="page-header">
 							<h1>
-								权限展示
+								角色展示
 							</h1>
 						</div><!-- /.page-header -->
 
@@ -16,10 +16,9 @@
 											<table id="sample-table-1" class="table table-striped table-bordered table-hover">
 												<thead>
 													<tr>
-														<th>权限ID</th>
-														<th>权限名称</th>
-														<th>控制器名</th>
-														<th>方法名</th>
+														<th>角色ID</th>
+														<th>角色名称</th>
+														<th>拥有权限</th>
 														<th>是否启用</th>
 														<th>添加人</th>
 														<th>添加时间</th>
@@ -30,18 +29,17 @@
 												<tbody id="tbox">
 												<?php foreach ($data as $k => $v): ?>
 													<tr>
-														<td><?=$v['t_id']?></td>
-														<td myid="<?=$v['t_id']?>" class="t_name"><?=$v["t_name"];?></td>
-														<td><?=$v['controller']?></td>
-														<td><?=$v["action"]?></td>
-														<td><?php if ($v["t_state"]): ?>是
+														<td><?=$v['c_id']?></td>
+														<td myid="<?=$v['c_id']?>" class="c_name"><?=$v["c_name"];?></td>
+														<td><?=$v['chara']?></td>
+														<td><?php if ($v["c_state"]): ?>是
 														<?php else: ?>否
 														<?php endif ?></td>
 														<td><?=$v["add_username"]?></td>
 														<td><?=$v["add_time"]?></td>
 														<td>
 															<div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
-																<a href="?r=thority/update&id=<?=$v['t_id']?>">修改</a>
+																<a href="?r=thority/update&id=<?=$v['c_id']?>">修改</a>
 															</div>
 														</td>
 													</tr>
