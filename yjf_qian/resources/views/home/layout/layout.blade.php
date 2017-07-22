@@ -72,11 +72,7 @@
 
                     <div class="hy-nav-title nav-main on" id="nav-main"><a href="http://www.yjf.com/type">分类</a><i class="icon-arrow"></i></div>
 
-                    <div class="nav-expand-list nav-expand-game">
 
-                        <i class="arrow"></i>
-
-                    </div>
 
                 </div>
 
@@ -96,7 +92,7 @@
 
             </div>
 
-            <div class="duya-header-gg clickstat" id="J_duyaHdGg" eid="click/push/navipic" eid_desc="点击/推荐/顶部导航图片"></div>
+            <div class="duya-header-gg clickstat" id="J_duyaHdGg" eid="click/push/navipic" eid_desc="点击/推荐/导航图片"></div>
 
             <div class="duya-header-control clearfix">
 
@@ -126,33 +122,7 @@
 
                 </div>
 
-                <div class="hy-nav-right">
 
-                    <a class="hy-nav-title clickstat" href="http://www.huya.com/download/" eid="click/navi/download" eid_desc="点击/导航/下载" target="_blank">
-
-                        <i class="hy-nav-icon hy-nav-download-icon"></i>
-
-                        <span class="title">下载</span>
-
-                    </a>
-
-                    <div class="nav-expand-list nav-expand-download">
-
-                        <i class="arrow"></i>
-
-                        <div class="download-nav">
-
-                            <a target="_blank" href="http://www.huya.com/download/"><i class="hy-nav-app-icon"></i><span>移动APP</span></a>
-
-                            <a target="_blank" href="http://www.huya.com/download/#players_pc"><i class="hy-nav-play-icon"></i><span>主播工具</span></a>
-
-                            <!-- <a target="_blank" href="http://www.huya.com/download/#tv"><i class="hy-nav-tv-icon"></i><span>虎牙TV版</span></a> -->
-
-                        </div>
-
-                    </div>
-
-                </div>
 
                 <div class="hy-nav-right nav-subscribe success-login">
 
@@ -206,7 +176,7 @@
 
                 </div>
 
-                <div class="hy-nav-right hy-nav-history">
+                <div class="hy-nav-right hy-nav-history" >
 
                     <a class="hy-nav-title nav-history new-clickstat" id="nav-history" href="http://i.huya.com/index.php?m=Subscribe&watch=1" target="_blank" report='{"eid":"click/position","position":"click/navi/lishi"}'>
 
@@ -242,7 +212,7 @@
 
                 </div>
 
-                <div class="hy-nav-right un-login">
+                <div class="hy-nav-right un-login" style="display: block">
 
                     <div class="hy-nav-title">
 
@@ -476,7 +446,7 @@
 
             <li class="sidebar-icon-item">
 
-                <a class="sidebar-icon-link clickstat" href="http://www.huya.com/g" title="分类" eid="click/navi/zuoce/gametype" eid_desc="点击/导航/左侧导航/全部游戏">
+                <a class="sidebar-icon-link clickstat" href="http://www.yjf.com/type" title="分类" eid="click/navi/zuoce/gametype" eid_desc="点击/导航/左侧导航/全部游戏">
 
                     <i class="sidebar-icon-type"></i>
 
@@ -488,7 +458,7 @@
 
             <li class="sidebar-icon-item ">
 
-                <a class="sidebar-icon-link clickstat" href="http://www.huya.com/g/100023" title="网游" eid="click/navi/zuoce/classify1" eid_desc="点击/导航/左侧导航/classify1">
+                <a class="sidebar-icon-link clickstat" href="http://www.yjf.com/fen/1" title="网游" eid="click/navi/zuoce/classify1" eid_desc="点击/导航/左侧导航/classify1">
 
                     <i style="background-image: url('http://huyaimg.dwstatic.com/cdnimage/sidebarNavGroup/phpz3aAZJ1488336152.png');"></i>
 
@@ -500,7 +470,7 @@
 
             <li class="sidebar-icon-item ">
 
-                <a class="sidebar-icon-link clickstat" href="http://www.huya.com/g/100002" title="单机" eid="click/navi/zuoce/classify2" eid_desc="点击/导航/左侧导航/classify2">
+                <a class="sidebar-icon-link clickstat" href="http://www.yjf.com/fen/2" title="单机" eid="click/navi/zuoce/classify2" eid_desc="点击/导航/左侧导航/classify2">
 
                     <i style="background-image: url('http://huyaimg.dwstatic.com/cdnimage/sidebarNavGroup/phpuKzEv31488336851.png');"></i>
 
@@ -512,7 +482,7 @@
 
             <li class="sidebar-icon-item ">
 
-                <a class="sidebar-icon-link clickstat" href="http://www.huya.com/g/100022" title="娱乐" eid="click/navi/zuoce/classify3" eid_desc="点击/导航/左侧导航/classify3">
+                <a class="sidebar-icon-link clickstat" href="http://www.yjf.com/fen/3" title="娱乐" eid="click/navi/zuoce/classify3" eid_desc="点击/导航/左侧导航/classify3">
 
                     <i style="background-image: url('http://huyaimg.dwstatic.com/cdnimage/sidebarNavGroup/phpNhPhI81488336174.png');"></i>
 
@@ -524,7 +494,7 @@
 
             <li class="sidebar-icon-item ">
 
-                <a class="sidebar-icon-link clickstat" href="http://www.huya.com/g/100004" title="手游" eid="click/navi/zuoce/classify4" eid_desc="点击/导航/左侧导航/classify4">
+                <a class="sidebar-icon-link clickstat" href="http://www.yjf.com/fen/4" title="手游" eid="click/navi/zuoce/classify4" eid_desc="点击/导航/左侧导航/classify4">
 
                     <i style="background-image: url('http://huyaimg.dwstatic.com/cdnimage/sidebarNavGroup/phpJAXeoz1488336183.png');"></i>
 
@@ -560,21 +530,24 @@
 
                 <a href="http://www.huya.com/l" class="clickstat sidebar-show-line" eid="click/navi/zuoce/live" eid_desc="点击/导航/左侧导航/全部直播"><i class="sidebar-icon-live"></i> 全部直播</a>
 
-                <a href="http://www.huya.com/g" class="clickstat sidebar-show-line" eid="click/navi/zuoce/gametype" eid_desc="点击/导航/左侧导航/全部游戏"><i class="sidebar-icon-type"></i>全部分类</a>
+                <a href="http://www.yjf.com/type" class="clickstat sidebar-show-line" eid="click/navi/zuoce/gametype" eid_desc="点击/导航/左侧导航/全部游戏"><i class="sidebar-icon-type"></i>全部分类</a>
 
             </div>
 
 
 
             <div class="sidebar-recom">
+                <?php $data=Illuminate\Support\Facades\DB::table('fang_type')->where("p_t_id",0)->get();
 
+                ?>
+                @foreach($data as $v)
                 <div class="m sidebar-show-line ">
 
-                    <a class="m-title clickstat" href="http://www.huya.com/g/100023" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1">
+                    <a class="m-title clickstat" href="http://www.yjf.com/fen/{{$v->t_id}}" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1">
 
                         <i class="m-title-type" style="background-image: url('http://huyaimg.dwstatic.com/cdnimage/sidebarNavGroup/phpz3aAZJ1488336152.png');"></i>
 
-                        <span class="m-title-span">网游竞技</span>
+                        <span class="m-title-span">{{$v->t_name}}</span>
 
                     </a>
 
@@ -582,252 +555,22 @@
 
                         <div class="recomend-list clearfix">
 
+                            <?php
+                                $datas=Illuminate\Support\Facades\DB::table('fang_type')->where("p_t_id",$v->t_id)->limit(11)->get();
+                            ?>
+                            @foreach($datas as $vv)
+                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.yjf.com/lists/{{$vv->t_id}}" title="英雄联盟">{{$vv->t_name}}</a>
+                            @endforeach
 
 
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.huya.com/g/lol" title="英雄联盟">英雄联盟</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.huya.com/g/4" title="穿越火线">穿越火线</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.huya.com/g/2" title="DNF">DNF</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.huya.com/g/6" title="魔兽DOTA">魔兽DOTA</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.huya.com/g/393" title="炉石传说">炉石传说</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.huya.com/g/9" title="QQ飞车">QQ飞车</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.huya.com/g/135" title="逆战">逆战</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.huya.com/g/2174" title="守望先锋">守望先锋</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.huya.com/g/802" title="坦克世界">坦克世界</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.huya.com/g/107" title="问道">问道</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.huya.com/g/1612" title="起凡">起凡</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.huya.com/g/2602" title="枪火游侠">枪火游侠</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.huya.com/g/897" title="剑灵">剑灵</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.huya.com/g/100035" title="最新网游">最新网游</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.huya.com/g_ol" title="全部">全部</a>
+                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen1" eid_desc="点击/导航/左侧导航/热门1" href="http://www.yjf.com/fen/{{$v->t_id}}" title="全部">全部</a>
 
                         </div>
 
                     </div>
 
                 </div>
-
-                <div class="m sidebar-show-line ">
-
-                    <a class="m-title clickstat" href="http://www.huya.com/g/100002" eid="click/navi/zuoce/remen2" eid_desc="点击/导航/左侧导航/热门2">
-
-                        <i class="m-title-type" style="background-image: url('http://huyaimg.dwstatic.com/cdnimage/sidebarNavGroup/phpuKzEv31488336851.png');"></i>
-
-                        <span class="m-title-span">单机热游</span>
-
-                    </a>
-
-                    <div class="m-bd">
-
-                        <div class="recomend-list clearfix">
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen2" eid_desc="点击/导航/左侧导航/热门2" href="http://www.huya.com/g/1964" title="主机游戏">主机游戏</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen2" eid_desc="点击/导航/左侧导航/热门2" href="http://www.huya.com/g/1732" title="我的世界">我的世界</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen2" eid_desc="点击/导航/左侧导航/热门2" href="http://www.huya.com/g/1902" title="跳伞之王">跳伞之王</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen2" eid_desc="点击/导航/左侧导航/热门2" href="http://www.huya.com/g/1997" title="方舟">方舟</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen2" eid_desc="点击/导航/左侧导航/热门2" href="http://www.huya.com/g/1060" title="七日杀">七日杀</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen2" eid_desc="点击/导航/左侧导航/热门2" href="http://www.huya.com/g/2793" title="绝地求生">绝地求生</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen2" eid_desc="点击/导航/左侧导航/热门2" href="http://www.huya.com/g/74" title="饥荒">饥荒</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen2" eid_desc="点击/导航/左侧导航/热门2" href="http://www.huya.com/g/411" title="经典怀旧">经典怀旧</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen2" eid_desc="点击/导航/左侧导航/热门2" href="http://www.huya.com/g_pc" title="全部">全部</a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="m sidebar-show-line ">
-
-                    <a class="m-title clickstat" href="http://www.huya.com/g/100022" eid="click/navi/zuoce/remen3" eid_desc="点击/导航/左侧导航/热门3">
-
-                        <i class="m-title-type" style="background-image: url('http://huyaimg.dwstatic.com/cdnimage/sidebarNavGroup/phpNhPhI81488336174.png');"></i>
-
-                        <span class="m-title-span">娱乐天地</span>
-
-                    </a>
-
-                    <div class="m-bd">
-
-                        <div class="recomend-list clearfix">
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen3" eid_desc="点击/导航/左侧导航/热门3" href="http://www.huya.com/g/1663" title="星秀">星秀</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen3" eid_desc="点击/导航/左侧导航/热门3" href="http://www.huya.com/g/2165" title="酷玩">酷玩</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen3" eid_desc="点击/导航/左侧导航/热门3" href="http://www.huya.com/g/2836" title="乡野">乡野</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen3" eid_desc="点击/导航/左侧导航/热门3" href="http://www.huya.com/g/2168" title="颜值">颜值</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen3" eid_desc="点击/导航/左侧导航/热门3" href="http://www.huya.com/g/2752" title="美食">美食</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen3" eid_desc="点击/导航/左侧导航/热门3" href="http://www.huya.com/g/2633" title="御宅">御宅</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen3" eid_desc="点击/导航/左侧导航/热门3" href="http://www.huya.com/g/2876" title="奇谈">奇谈</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen3" eid_desc="点击/导航/左侧导航/热门3" href="http://www.huya.com/g/100044" title="吃喝玩乐">吃喝玩乐</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen3" eid_desc="点击/导航/左侧导航/热门3" href="http://www.huya.com/g_yl" title="全部">全部</a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="m sidebar-show-line ">
-
-                    <a class="m-title clickstat" href="http://www.huya.com/g/100004" eid="click/navi/zuoce/remen4" eid_desc="点击/导航/左侧导航/热门4">
-
-                        <i class="m-title-type" style="background-image: url('http://huyaimg.dwstatic.com/cdnimage/sidebarNavGroup/phpJAXeoz1488336183.png');"></i>
-
-                        <span class="m-title-span">手游休闲</span>
-
-                    </a>
-
-                    <div class="m-bd">
-
-                        <div class="recomend-list clearfix">
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen4" eid_desc="点击/导航/左侧导航/热门4" href="http://www.huya.com/g/2336" title="王者荣耀">王者荣耀</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen4" eid_desc="点击/导航/左侧导航/热门4" href="http://www.huya.com/g/2411" title="球球大作战">球球大作战</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen4" eid_desc="点击/导航/左侧导航/热门4" href="http://www.huya.com/g/2413" title="CF枪战王者">CF枪战王者</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen4" eid_desc="点击/导航/左侧导航/热门4" href="http://www.huya.com/g/100049" title="狼人杀专区">狼人杀专区</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen4" eid_desc="点击/导航/左侧导航/热门4" href="http://www.huya.com/g/100036" title="棋牌休闲">棋牌休闲</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen4" eid_desc="点击/导航/左侧导航/热门4" href="http://www.huya.com/g/2852" title="天龙八部">天龙八部</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen4" eid_desc="点击/导航/左侧导航/热门4" href="http://www.huya.com/g/2824" title=" 魂斗罗"> 魂斗罗</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen4" eid_desc="点击/导航/左侧导航/热门4" href="http://www.huya.com/g/2751" title="欢乐球吃球">欢乐球吃球</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen4" eid_desc="点击/导航/左侧导航/热门4" href="http://www.huya.com/g/100048" title="卡牌手游">卡牌手游</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen4" eid_desc="点击/导航/左侧导航/热门4" href="http://www.huya.com/g/2760" title="英魂之刃">英魂之刃</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen4" eid_desc="点击/导航/左侧导航/热门4" href="http://www.huya.com/g/100029" title="热门手游">热门手游</a>
-
-
-
-                            <a class="recomend-item clickstat" eid="click/navi/zuoce/remen4" eid_desc="点击/导航/左侧导航/热门4" href="http://www.huya.com/g_sy" title="全部">全部</a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+                    @endforeach
             </div>
 
             <div class="sidebar-banner" style="display:none">
@@ -842,7 +585,6 @@
 
         <div class="sidebar-tool">
 
-            <a target="_blank" class="download clickstat" eid="click/navi/zuoce/xiazai" eid_desc="点击/导航/左侧导航/客户端下载" href="http://www.huya.com/download/" title="下载客户端"></a>
 
             <a target="_blank" class="toAnchor clickstat" eid="click/navi/zuoce/zhubo" eid_desc="点击/导航/左侧导航/我要做主播" href="http://www.huya.com//e/zhubo" title="我要直播"></a>
 
