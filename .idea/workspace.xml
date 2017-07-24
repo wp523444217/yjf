@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42ddf5f7-6e01-4775-b5f7-7c6020a0ce0d" name="默认的" comment="修改功能">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yjf_qian/public/home/js/auto_combine_4be06_a1daf54.js" afterPath="$PROJECT_DIR$/yjf_qian/public/home/js/auto_combine_4be06_a1daf54.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yjf_qian/public/home/css/auto_combine_580c2_6a6309a.css" afterPath="$PROJECT_DIR$/yjf_qian/public/home/css/auto_combine_580c2_6a6309a.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yjf_qian/public/home/js/headerFunction_b5d75de.js" afterPath="$PROJECT_DIR$/yjf_qian/public/home/js/headerFunction_b5d75de.js" />
@@ -13,10 +14,17 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yjf_qian/resources/views/home/layout/layout.blade.php" afterPath="$PROJECT_DIR$/yjf_qian/resources/views/home/layout/layout.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yjf_qian/public/home/css/pages_modules_edf5626.css" afterPath="$PROJECT_DIR$/yjf_qian/public/home/css/pages_modules_edf5626.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yjf_qian/public/home/js/push-min.js" afterPath="$PROJECT_DIR$/yjf_qian/public/home/js/push-min.js" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yjf_qian/resources/views/home/layout/layout.blade.php" afterPath="$PROJECT_DIR$/yjf_qian/resources/views/home/layout/layout.blade.php" />
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yjf_qian/app/Http/routes.php" afterPath="$PROJECT_DIR$/yjf_qian/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yjf_qian/resources/views/home/type/type.blade.php" afterPath="$PROJECT_DIR$/yjf_qian/resources/views/home/type/type.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+<<<<<<< HEAD
       <change type="MOVED" beforePath="F:\phpStudy\WWW\BigTraining\yjf\yjf_qian\resources\views\home\index\index.php" afterPath="$PROJECT_DIR$/yjf_qian/resources/views/home/index/index.blade.php" />
+=======
+      <change type="MOVED" beforePath="F:\phpStudy\WWW\BigTraining\yjf\yjf_qian\resources\views\home\zhu\wodefuli.php" afterPath="$PROJECT_DIR$/yjf_qian/resources/views/home/zhu/wodefuli.blade.php" />
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
     </list>
     <ignored path="yjf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +48,58 @@
     <favorites_list name="yjf" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf />
+=======
+    <leaf>
+      <file leaf-file-name="ZhuController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yjf_qian/app/Http/Controllers/Home/ZhuController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="12.527778" vertical-offset="640" max-vertical-offset="1431">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TypeController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yjf_qian/app/Http/Controllers/Home/TypeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.4722223" vertical-offset="451" max-vertical-offset="1161">
+              <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+              <folding>
+                <element signature="e#45#73#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="type.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yjf_qian/resources/views/home/type/type.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.2272727" vertical-offset="0" max-vertical-offset="2025">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yjf_qian/resources/views/home/layout/layout.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9465346" vertical-offset="4331" max-vertical-offset="18630">
+              <caret line="184" column="53" selection-start-line="184" selection-start-column="53" selection-end-line="184" selection-end-column="53" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#3;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,6 +137,10 @@
         <option value="$PROJECT_DIR$/yjf_qian/app/Http/Controllers/Home/ZhuController.php" />
         <option value="$PROJECT_DIR$/yjf_qian/.env" />
         <option value="$PROJECT_DIR$/yjf_qian/resources/views/home/type/type.php" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/yjf_qian/resources/views/home/index/index.php" />
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
         <option value="$PROJECT_DIR$/yjf_qian/resources/views/home/footer.boade.php" />
         <option value="$PROJECT_DIR$/yjf_qian/resources/views/home/header.blade.php" />
         <option value="$PROJECT_DIR$/yjf_qian/app/Http/Controllers/Home/TypeController.php" />
@@ -86,10 +149,18 @@
         <option value="$PROJECT_DIR$/yjf_qian/resources/views/home/layout/header.blade.php" />
         <option value="$PROJECT_DIR$/yjf_qian/resources/views/home/index/index.php" />
         <option value="$PROJECT_DIR$/yjf_qian/resources/views/home/type/type.blade.php" />
+        <option value="$PROJECT_DIR$/yjf_qian/app/Http/Controllers/Home/TypeController.php" />
+        <option value="$PROJECT_DIR$/yjf_qian/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/yjf_qian/resources/views/home/zhu/wodefuli.php" />
+        <option value="$PROJECT_DIR$/yjf_qian/resources/views/home/zhu/wodefuli.blade.php" />
         <option value="$PROJECT_DIR$/yjf_qian/resources/views/home/layout/layout.blade.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/yjf_qian/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/yjf_qian/app/Http/Controllers/Home/ZhiboController.php" />
         <option value="$PROJECT_DIR$/yjf_qian/resources/views/home/zhibo/zhibo.blade.php" />
+=======
+        <option value="$PROJECT_DIR$/yjf_qian/resources/views/home/layout/header.blade.php" />
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
       </list>
     </option>
   </component>
@@ -392,7 +463,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="database" />
+=======
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yjf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yjf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yjf_qian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yjf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yjf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yjf_qian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -523,6 +646,9 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -530,9 +656,6 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -569,20 +692,24 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16947852" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25718608" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -621,7 +748,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="262" max-vertical-offset="1161">
           <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
           <folding>
+<<<<<<< HEAD
             <element signature="e#45#73#0#PHP" expanded="false" />
+=======
+            <element signature="e#45#73#0#PHP" expanded="true" />
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
           </folding>
         </state>
       </provider>
@@ -638,7 +769,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="23090" max-vertical-offset="27216">
           <caret line="863" column="1" selection-start-line="863" selection-start-column="1" selection-end-line="863" selection-end-column="17" />
+<<<<<<< HEAD
           <folding />
+=======
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#3;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
         </state>
       </provider>
     </entry>
@@ -646,6 +785,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="14148">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="38" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
         </state>
       </provider>
     </entry>
@@ -653,6 +796,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="702">
           <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#45#73#0#PHP" expanded="false" />
+          </folding>
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
         </state>
       </provider>
     </entry>
@@ -857,6 +1006,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="702">
           <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#45#73#0#PHP" expanded="false" />
+          </folding>
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
         </state>
       </provider>
     </entry>
@@ -867,10 +1022,35 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/yjf_qian/app/Http/Controllers/Home/TypeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.4722223" vertical-offset="451" max-vertical-offset="1161">
+          <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+          <folding>
+            <element signature="e#45#73#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
     <entry file="file://$PROJECT_DIR$/yjf_qian/resources/views/home/zhu/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="63.0" vertical-offset="2511" max-vertical-offset="41472">
           <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+<<<<<<< HEAD
+=======
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yjf_qian/resources/views/home/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6168224" vertical-offset="4449" max-vertical-offset="62478">
+          <caret line="177" column="37" selection-start-line="177" selection-start-column="37" selection-end-line="177" selection-end-column="37" />
+          <folding />
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
         </state>
       </provider>
     </entry>
@@ -917,16 +1097,24 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/yjf_qian/resources/views/home/zhu/wodexiaoxi.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5744681" vertical-offset="0" max-vertical-offset="41796">
           <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+=======
+    <entry file="file://$PROJECT_DIR$/yjf_qian/app/Http/Controllers/Home/ZhuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="12.527778" vertical-offset="640" max-vertical-offset="1431">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yjf_qian/resources/views/home/index/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="2.212766" vertical-offset="63251" max-vertical-offset="65961">
           <caret line="2385" column="13" selection-start-line="2385" selection-start-column="13" selection-end-line="2385" selection-end-column="13" />
           <folding>
@@ -955,12 +1143,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.25" vertical-offset="1620" max-vertical-offset="6993">
           <caret line="63" column="28" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="28" />
+=======
+        <state vertical-scroll-proportion="-1.5" vertical-offset="0" max-vertical-offset="999">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yjf_qian/app/Http/Controllers/Home/TypeController.php">
+    <entry file="file://$PROJECT_DIR$/yjf_qian/resources/views/home/type/type.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.65510947" vertical-offset="559" max-vertical-offset="1107">
           <caret line="34" column="5" selection-start-line="29" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
           <folding>
@@ -975,10 +1168,42 @@
           <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
           <folding>
             <element signature="e#45#73#0#PHP" expanded="true" />
+=======
+        <state vertical-scroll-proportion="-1.2272727" vertical-offset="0" max-vertical-offset="2025">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yjf_qian/public/home/js/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="571">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yjf_qian/public/home/js/footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="571">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yjf_qian/resources/views/home/zhu/wodefuli.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6891089" vertical-offset="30" max-vertical-offset="5859">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="e#222#246#0#HTML" expanded="true" />
+            <element signature="e#8389#8426#0#HTML" expanded="true" />
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/yjf_qian/resources/views/home/layout/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="28.201233" vertical-offset="333" max-vertical-offset="15336">
@@ -999,7 +1224,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.81509435" vertical-offset="0" max-vertical-offset="1080">
           <caret line="16" column="32" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="32" />
+=======
+    <entry file="file://$PROJECT_DIR$/yjf_qian/resources/views/home/layout/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37425742" vertical-offset="3240" max-vertical-offset="4563">
+          <caret line="127" column="43" selection-start-line="127" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+>>>>>>> ef6c9ae04e2907f6baeafc5339273801a4d0ce23
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yjf_qian/resources/views/home/layout/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9465346" vertical-offset="4331" max-vertical-offset="18630">
+          <caret line="184" column="53" selection-start-line="184" selection-start-column="53" selection-end-line="184" selection-end-column="53" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#3;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

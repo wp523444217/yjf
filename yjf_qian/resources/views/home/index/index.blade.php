@@ -11,9 +11,9 @@
     <meta name="Keywords" content="lol直播,英雄联盟直播,dota2直播,dnf直播,cf直播,游戏直播,赛事直播,YY直播,美女直播,户外直播,视频直播,虎牙TV,虎牙直播,EDG"/>
     <meta name="Description" content="虎牙直播是中国领先的互动直播平台,可提供同时300万人在线高清观看、赛事直播与游戏直播，热门手游直播等。包含王者荣耀，球球大作战等热门手游直播，lol、dota2、dnf等热门游戏直播以及单机游戏、手游等游戏直播"/>
     <meta name="renderer" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta http-equiv="X-UA-Compatible" ="IE=edge,chrome=1"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="baidu-site-verification" content="goT80oD7jJ" />
+    <meta name="baidu-site-verification" content="goT80oD7jJ" />content
     <meta name="baidu_union_verify" content="5ea44697c701baa2f69d4d6a685b3122">    
     <meta name="360-site-verification" content="e7ebef547974d9b5452addd5a6ab0c9f" />
     <meta name="sogou_site_verification" content="GczIV7FOQS"/>
@@ -379,51 +379,22 @@
                     网游竞技                </a>
             </h3>
                         <ul class="game-classify-list clearfix">
+                       <?php foreach($user as $k=>$v){?>
                                 <li>
                     <a href="http://www.huya.com/9025806" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/1-1","game_id":"9","ayyuid":"128803871"}'>
                         <div class="img-box">
-                            <img class="pic" src="http://screenshot.dwstatic.com/yysnapshot/17e293714b28d484f5790b911f97bf3134420255?imageview/4/0/w/136/h/76/blur/1" alt="关注7月18日虎牙车王热身赛的直播"  title="关注7月18日虎牙车王热身赛的直播">
+                            <img class="pic" src="<?php echo $v->f_img?>" alt="虎牙在线直播"  title="关注7月18日虎牙车王热身赛的直播">
                         </div>                       
                         <span class="game-type">QQ飞车</span>
                         <div class="item-mask"></div>
                         <i class="btn-link__hover_i"></i>
-                        <div class="game-classify-name">关注7月18日虎牙车王热身赛</div>
+                        <div class="game-classify-name"><?php echo $v->f_name?></div>
                     </a>
                 </li>
-                                <li>
-                    <a href="http://www.huya.com/154603319" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/1-2","game_id":"2563","ayyuid":"167305620"}'>
-                        <div class="img-box">
-                            <img class="pic" src="http://screenshot.dwstatic.com/yysnapshot/f3fccb8f8b3755331cc5bee2e8593757e4f8d867?imageview/4/0/w/136/h/76/blur/1" alt="国服第一车神 备战车神赛的直播"  title="国服第一车神 备战车神赛的直播">
-                        </div>                       
-                        <span class="game-type">极品飞车Online</span>
-                        <div class="item-mask"></div>
-                        <i class="btn-link__hover_i"></i>
-                        <div class="game-classify-name">国服第一车神 备战车神赛</div>
-                    </a>
-                </li>
-                                <li>
-                    <a href="http://www.huya.com/lastpriest" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/1-3","game_id":"393","ayyuid":"431653844"}'>
-                        <div class="img-box">
-                            <img class="pic" src="http://screenshot.dwstatic.com/yysnapshot/8c014ddc70456bc8a441f6cdd2fb0bd9059ab0a2?imageview/4/0/w/136/h/76/blur/1" alt="医：抓抓抓测试版的直播"  title="医：抓抓抓测试版的直播">
-                        </div>                       
-                        <span class="game-type">炉石传说</span>
-                        <div class="item-mask"></div>
-                        <i class="btn-link__hover_i"></i>
-                        <div class="game-classify-name">医：抓抓抓测试版</div>
-                    </a>
-                </li>
-                                <li>
-                    <a href="http://www.huya.com/azsya" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/1-4","game_id":"2174","ayyuid":"1557374026"}'>
-                        <div class="img-box">
-                            <img class="pic" src="http://screenshot.dwstatic.com/yysnapshot/6ea8a52fe9d47fd2263b84aab47c86aa0f30281b?imageview/4/0/w/136/h/76/blur/1" alt="SYA-第一猎空的直播"  title="SYA-第一猎空的直播">
-                        </div>                       
-                        <span class="game-type">守望先锋</span>
-                        <div class="item-mask"></div>
-                        <i class="btn-link__hover_i"></i>
-                        <div class="game-classify-name">SYA-第一猎空</div>
-                    </a>
-                </li>
-                   
+                <?php
+                }
+                ?>
+             
             </ul>
                     </div>
                 <div class="game-classify" >
@@ -432,52 +403,23 @@
                     <i style="background-image: url('http://livewebbs2.dwstatic.com/huya_hot_rec_theme_logo_1488335054.png')"></i>
                     单机热游                </a>
             </h3>
-                        <ul class="game-classify-list clearfix">
+                       <ul class="game-classify-list clearfix">
+                       <?php foreach($user as $k=>$v){?>
                                 <li>
-                    <a href="http://www.huya.com/xiaoyugame" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/2-1","game_id":"1964","ayyuid":"967499203"}'>
+                    <a href="http://www.huya.com/9025806" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/1-1","game_id":"9","ayyuid":"128803871"}'>
                         <div class="img-box">
-                            <img class="pic" src="http://screenshot.dwstatic.com/yysnapshot/8500a84bc245509ca87d8623612606c3fdc3ec31?imageview/4/0/w/136/h/76/blur/1" alt="90098主播升学考核直播中的直播"  title="90098主播升学考核直播中的直播">
+                            <img class="pic" src="<?php echo $v->f_img?>" alt="虎牙在线直播"  title="关注7月18日虎牙车王热身赛的直播">
                         </div>                       
-                        <span class="game-type">主机游戏</span>
+                        <span class="game-type">拳皇</span>
                         <div class="item-mask"></div>
                         <i class="btn-link__hover_i"></i>
-                        <div class="game-classify-name">90098主播升学考核直播中</div>
+                        <div class="game-classify-name"><?php echo $v->f_name?></div>
                     </a>
                 </li>
-                                <li>
-                    <a href="http://www.huya.com/quedee" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/2-2","game_id":"2793","ayyuid":"1332412075"}'>
-                        <div class="img-box">
-                            <img class="pic" src="http://screenshot.dwstatic.com/yysnapshot/65cb24bc631c7186fbf9dfee94c4fc0cc3c1cfa6?imageview/4/0/w/136/h/76/blur/1" alt="尬枪王子的直播"  title="尬枪王子的直播">
-                        </div>                       
-                        <span class="game-type">绝地求生</span>
-                        <div class="item-mask"></div>
-                        <i class="btn-link__hover_i"></i>
-                        <div class="game-classify-name">尬枪王子</div>
-                    </a>
-                </li>
-                                <li>
-                    <a href="http://www.huya.com/h1z1fanhua" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/2-3","game_id":"1902","ayyuid":"12392657"}'>
-                        <div class="img-box">
-                            <img class="pic" src="http://screenshot.dwstatic.com/yysnapshot/847f1b79b82ac901b751969e61c893245ba65da3?imageview/4/0/w/136/h/76/blur/1" alt="六天后，新的工会启航！的直播"  title="六天后，新的工会启航！的直播">
-                        </div>                       
-                        <span class="game-type">跳伞之王</span>
-                        <div class="item-mask"></div>
-                        <i class="btn-link__hover_i"></i>
-                        <div class="game-classify-name">六天后，新的工会启航！</div>
-                    </a>
-                </li>
-                                <li>
-                    <a href="http://www.huya.com/xiatiany" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/2-4","game_id":"1732","ayyuid":"1276772376"}'>
-                        <div class="img-box">
-                            <img class="pic" src="http://screenshot.dwstatic.com/yysnapshot/0487b2a76547c59369d8c03947a3f0d9fa94b5dd?imageview/4/0/w/136/h/76/blur/1" alt="Five.二龙哥 我回来啦的直播"  title="Five.二龙哥 我回来啦的直播">
-                        </div>                       
-                        <span class="game-type">我的世界</span>
-                        <div class="item-mask"></div>
-                        <i class="btn-link__hover_i"></i>
-                        <div class="game-classify-name">Five.二龙哥 我回来啦</div>
-                    </a>
-                </li>
-                   
+                <?php
+                }
+                ?>
+      
             </ul>
                     </div>
                 <div class="game-classify" >
@@ -486,53 +428,22 @@
                     <i style="background-image: url('http://livewebbs2.dwstatic.com/huya_hot_rec_theme_logo_1488335035.png')"></i>
                     娱乐天地                </a>
             </h3>
-                        <ul class="game-classify-list clearfix">
+                         <ul class="game-classify-list clearfix">
+                       <?php foreach($user as $k=>$v){?>
                                 <li>
-                    <a href="http://www.huya.com/1948836095" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/3-1","game_id":"1663","ayyuid":"1707748632"}'>
+                    <a href="http://www.huya.com/9025806" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/1-1","game_id":"9","ayyuid":"128803871"}'>
                         <div class="img-box">
-                            <img class="pic" src="http://huyaimg.dwstatic.com/cdnimage/anchorpost/1085/a7/dc175dbd7403660c0cce3faa72d9dd_1663_1497962005.jpg?imageview/4/0/w/136/h/76/blur/1" alt="站住！不要跑！的直播"  title="站住！不要跑！的直播">
+                            <img class="pic" src="<?php echo $v->f_img?>" alt="虎牙在线直播"  title="关注7月18日虎牙车王热身赛的直播">
                         </div>                       
-                        <span class="game-type">星秀</span>
+                        <span class="game-type">yy</span>
                         <div class="item-mask"></div>
                         <i class="btn-link__hover_i"></i>
-                        <div class="game-classify-name">站住！不要跑！</div>
+                        <div class="game-classify-name"><?php echo $v->f_name?></div>
                     </a>
                 </li>
-                                <li>
-                    <a href="http://www.huya.com/yashen" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/3-2","game_id":"2752","ayyuid":"1088585102"}'>
-                        <div class="img-box">
-                            <img class="pic" src="http://screenshot.dwstatic.com/yysnapshot/e8345aad1411934568808afc16bbd2a94c70aadc?imageview/4/0/w/136/h/76/blur/1" alt="香辣小龙虾，爆炒蛏子，凉拌猪耳的直播"  title="香辣小龙虾，爆炒蛏子，凉拌猪耳的直播">
-                        </div>                       
-                        <span class="game-type">美食</span>
-                        <div class="item-mask"></div>
-                        <i class="btn-link__hover_i"></i>
-                        <div class="game-classify-name">香辣小龙虾，爆炒蛏子，凉拌猪耳</div>
-                    </a>
-                </li>
-                                <li>
-                    <a href="http://www.huya.com/1683954582" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/3-3","game_id":"2836","ayyuid":"1501374403"}'>
-                        <div class="img-box">
-                            <img class="pic" src="http://screenshot.dwstatic.com/yysnapshot/41d6e7f6d11691795079f9699103345ba65654d6?imageview/4/0/w/136/h/76/blur/1" alt="海南环岛152的直播"  title="海南环岛152的直播">
-                        </div>                       
-                        <span class="game-type">乡野</span>
-                        <div class="item-mask"></div>
-                        <i class="btn-link__hover_i"></i>
-                        <div class="game-classify-name">海南环岛152</div>
-                    </a>
-                </li>
-                                <li>
-                    <a href="http://www.huya.com/daleilei" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/3-4","game_id":"2165","ayyuid":"1011477490"}'>
-                        <div class="img-box">
-                            <img class="pic" src="http://screenshot.dwstatic.com/yysnapshot/3b20f5ddbced9520e426c6dd89ad5146ed46002d?imageview/4/0/w/136/h/76/blur/1" alt="虎子：各种搭讪美女各种互动的直播"  title="虎子：各种搭讪美女各种互动的直播">
-                        </div>                       
-                        <span class="game-type">酷玩</span>
-                        <div class="item-mask"></div>
-                        <i class="btn-link__hover_i"></i>
-                        <div class="game-classify-name">虎子：各种搭讪美女各种互动</div>
-                    </a>
-                </li>
-                   
-            </ul>
+                <?php
+                }
+                ?>            </ul>
                     </div>
                 <div class="game-classify" style="margin-right:0">
             <h3>
@@ -540,51 +451,24 @@
                     <i style="background-image: url('http://livewebbs2.dwstatic.com/huya_hot_rec_theme_logo_1488335045.png')"></i>
                     手游休闲                </a>
             </h3>
-                        <ul class="game-classify-list clearfix">
+                         <ul class="game-classify-list clearfix">
+                       <?php foreach($user as $k=>$v){?>
                                 <li>
-                    <a href="http://www.huya.com/haishi" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/4-1","game_id":"2336","ayyuid":"227518226"}'>
+                    <a href="http://www.huya.com/9025806" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/1-1","game_id":"9","ayyuid":"128803871"}'>
                         <div class="img-box">
-                            <img class="pic" src="http://screenshot.dwstatic.com/yysnapshot/914e98ea545550afa853ed05e473847feb20a6f9?imageview/4/0/w/136/h/76/blur/1" alt="【嗨氏】中单杀神单排法王江海涛的直播"  title="【嗨氏】中单杀神单排法王江海涛的直播">
+                            <img class="pic" src="<?php echo $v->f_img?>" alt="虎牙在线直播"  title="关注7月18日虎牙车王热身赛的直播">
                         </div>                       
                         <span class="game-type">王者荣耀</span>
                         <div class="item-mask"></div>
                         <i class="btn-link__hover_i"></i>
-                        <div class="game-classify-name">【嗨氏】中单杀神单排法王江海涛</div>
+                        <div class="game-classify-name"><?php echo $v->f_name?></div>
                     </a>
                 </li>
-                                <li>
-                    <a href="http://www.huya.com/qingfeng" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/4-2","game_id":"2411","ayyuid":"1641950957"}'>
-                        <div class="img-box">
-                            <img class="pic" src="http://screenshot.dwstatic.com/yysnapshot/2e0fa4fdf61419564b84dc5f620ed15e33d9e80a?imageview/4/0/w/136/h/76/blur/1" alt="带粉狂魔哦～～～的直播"  title="带粉狂魔哦～～～的直播">
-                        </div>                       
-                        <span class="game-type">球球大作战</span>
-                        <div class="item-mask"></div>
-                        <i class="btn-link__hover_i"></i>
-                        <div class="game-classify-name">带粉狂魔哦～～～</div>
-                    </a>
-                </li>
-                                <li>
-                    <a href="http://www.huya.com/3401sansheng" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/4-3","game_id":"2413","ayyuid":"1016605197"}'>
-                        <div class="img-box">
-                            <img class="pic" src="http://screenshot.dwstatic.com/yysnapshot/20b7015ba3d114bd5c9fd20c81308283b5132fb0?imageview/4/0/w/136/h/76/blur/1" alt="三声巡山记:苹果微信区,AK枪神渡劫了！的直播"  title="三声巡山记:苹果微信区,AK枪神渡劫了！的直播">
-                        </div>                       
-                        <span class="game-type">CF枪战王者</span>
-                        <div class="item-mask"></div>
-                        <i class="btn-link__hover_i"></i>
-                        <div class="game-classify-name">三声巡山记:苹果微信区,AK枪神渡劫了！</div>
-                    </a>
-                </li>
-                                <li>
-                    <a href="http://www.huya.com/doodoo" target="_blank" class="new-clickstat" report='{"eid":"click/position","position":"index/remen/4-4","game_id":"2774","ayyuid":"161303350"}'>
-                        <div class="img-box">
-                            <img class="pic" src="http://screenshot.dwstatic.com/yysnapshot/4cc09f7576d3e743a3ff63bc3c47355962ab1233?imageview/4/0/w/136/h/76/blur/1" alt="挑战100连胜Ing...目前连胜3场的直播"  title="挑战100连胜Ing...目前连胜3场的直播">
-                        </div>                       
-                        <span class="game-type">天天狼人杀</span>
-                        <div class="item-mask"></div>
-                        <i class="btn-link__hover_i"></i>
-                        <div class="game-classify-name">挑战100连胜Ing...目前连胜3场</div>
-                    </a>
-                </li>
+                <?php
+                }
+                ?>
+           
+            </ul>
                    
             </ul>
                     </div>
@@ -634,13 +518,11 @@
                 <div class="news-main">
                       
                     <ul class="news-list">
-                                                                                                                        <li class="news-item"><em class="news-type"><a class="news-type-link" target="_blank" href="http://blog.huya.com/news">新闻</a></em><a target="_blank" href="http://blog.huya.com/news/4173" class="J_g_resource news-link clickstat ellipsis" data-pos="index/news/list/0" data-rsc="4173" eid="click/push/indexnews/words1" eid_desc="点击/推荐/首页新闻/文字新闻1" title="虎牙直播7.10-7.16一周赛事节目推荐">虎牙直播7.10-7.16一周赛事节目推荐</a><span class="news-time">07/12</span></li>
-                                                                                                <li class="news-item"><em class="news-type"><a class="news-type-link" target="_blank" href="http://blog.huya.com/policy">政策</a></em><a target="_blank" href="http://blog.huya.com/policy/116" class="J_g_resource news-link clickstat ellipsis" data-pos="index/news/list/1" data-rsc="116" eid="click/push/indexnews/words2" eid_desc="点击/推荐/首页新闻/文字新闻2" title="虎牙主播和公会准则（直播必看）">虎牙主播和公会准则（直播必看）</a><span class="news-time">08/28</span></li>
-                                                                                                <li class="news-item"><em class="news-type"><a class="news-type-link" target="_blank" href="http://blog.huya.com/news">新闻</a></em><a target="_blank" href="http://blog.huya.com/news/4193" class="J_g_resource news-link clickstat ellipsis" data-pos="index/news/list/2" data-rsc="4193" eid="click/push/indexnews/words3" eid_desc="点击/推荐/首页新闻/文字新闻3" title="最后的角斗！球球总决赛！">最后的角斗！球球总决赛！</a><span class="news-time">07/14</span></li>
-                                                                                                <li class="news-item"><em class="news-type"><a class="news-type-link" target="_blank" href="http://blog.huya.com/news">新闻</a></em><a target="_blank" href="http://blog.huya.com/news/4191" class="J_g_resource news-link clickstat ellipsis" data-pos="index/news/list/3" data-rsc="4191" eid="click/push/indexnews/words4" eid_desc="点击/推荐/首页新闻/文字新闻4" title="BestKiller大战狼人杀7.15跨界来袭">BestKiller大战狼人杀7.15跨界来袭</a><span class="news-time">07/14</span></li>
-                                                                                                <li class="news-item"><em class="news-type"><a class="news-type-link" target="_blank" href="http://blog.huya.com/news">新闻</a></em><a target="_blank" href="http://blog.huya.com/news/4189" class="J_g_resource news-link clickstat ellipsis" data-pos="index/news/list/4" data-rsc="4189" eid="click/push/indexnews/words5" eid_desc="点击/推荐/首页新闻/文字新闻5" title="御宅|二次元月元气coser带你逛漫展">御宅|二次元月元气coser带你逛漫展</a><span class="news-time">07/14</span></li>
-                                                                                                <li class="news-item"><em class="news-type"><a class="news-type-link" target="_blank" href="http://blog.huya.com/news">新闻</a></em><a target="_blank" href="http://blog.huya.com/news/4188" class="J_g_resource news-link clickstat ellipsis" data-pos="index/news/list/5" data-rsc="4188" eid="click/push/indexnews/words6" eid_desc="点击/推荐/首页新闻/文字新闻6" title="《英雄枪战》ESG精英赛战报！">《英雄枪战》ESG精英赛战报！</a><span class="news-time">07/14</span></li>
-                                                                                                <li class="news-item"><em class="news-type"><a class="news-type-link" target="_blank" href="http://blog.huya.com/news">新闻</a></em><a target="_blank" href="http://blog.huya.com/news/4186" class="J_g_resource news-link clickstat ellipsis" data-pos="index/news/list/6" data-rsc="4186" eid="click/push/indexnews/words7" eid_desc="点击/推荐/首页新闻/文字新闻7" title="《新QQ三国》十周年见面会相聚广州">《新QQ三国》十周年见面会相聚广州</a><span class="news-time">07/14</span></li>
+                    <?php foreach($info as $k=>$v){?>
+         <li class="news-item"><em class="news-type"><a class="news-type-link" target="_blank" href="http://blog.huya.com/news"><?php echo $v->s_type?></a></em><a target="_blank" href="http://blog.huya.com/news/4186" class="J_g_resource news-link clickstat ellipsis" data-pos="index/news/list/6" data-rsc="4186" eid="click/push/indexnews/words7" eid_desc="点击/推荐/首页新闻/文字新闻7" title="《新QQ三国》十周年见面会相聚广州"><?php echo $v->s_desc?></a><span class="news-time"><?php echo date("m/d",$v->add_time);?></span></li>
+                                            <?php
+                                            }
+                                            ?>
                                             </ul>                    
                             
                 </div>
