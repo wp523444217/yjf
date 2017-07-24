@@ -47,6 +47,11 @@
 @extends('home/layout/layout')
 @section('content')
 
+@extends('home/layout/left')
+@section('content1')
+
+@stop
+
     <div class="js-responded-list narrow">
 
         <div class="mod-list">

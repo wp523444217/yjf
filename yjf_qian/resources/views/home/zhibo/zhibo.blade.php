@@ -40,6 +40,11 @@
 @extends('home/layout/layout')
 @section('content')
 
+@extends('home/layout/left')
+@section('content1')
+
+@stop
+
 
 
 
