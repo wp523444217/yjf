@@ -11,9 +11,10 @@ Route::group(['namespace'=> 'Home'],function(){
      //顶级分类
      Route::get('/type','TypeController@type');
     //二级分类
-    Route::get('/fen/{id}','TypeController@fen');
-    //
-    Route::get('/lists/{id}','TypeController@lists');
+     Route::get('/fen/{id}','TypeController@fen');
+     //直播首页
+     Route::get('/zb','ZhiboController@zhibo');
+    Route::get('/lists/{id}','ZhiboController@lists');
 	 //首页直播页面
 	 Route::get('/live','LiveController@index');
 	 //登录

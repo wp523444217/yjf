@@ -167,9 +167,9 @@
                 </div>
 
 
-<div class="box" style="display:block">
+<div class="box" style="display:none">
     <div class="login-box">
-        <div class="login">
+        <div class="login" >
             <div class="login-main">
                 <div class="login-hd">
                     <a class="tab-btn">登录</a>
