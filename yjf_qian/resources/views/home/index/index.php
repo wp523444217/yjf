@@ -167,7 +167,7 @@
                 </div>
 
 
-<div class="box" style="display:black">
+<div class="box" style="display:block">
     <div class="login-box">
         <div class="login">
             <div class="login-main">
@@ -176,6 +176,7 @@
                     <a class="tab-btn active">注册</a>
                     <i class="line J_line" style="left: 80px;"></i>
                 </div>
+
                 <div class="login-bd">
                     <div class="login-content">
                         <div class="tab-unit" style="display: none;">
@@ -193,6 +194,7 @@
                                 <iframe height="370" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
                                 <!-- <div><a class="reg-by-mail" href="#">使用邮箱注册&gt;</a></div> -->
                             </div>
+                            
                             <div class="register-tab" style="display: none;">
                                 <iframe height="370" frameborder="0" allowtransparency="true" scrolling="no" src="about:blank"></iframe>
                                 <div><a href="#" class="reg-by-phone">使用手机注册&gt;</a></div>
@@ -201,6 +203,7 @@
                     </div>
                     <i class="login-loading J_loading" style="display: inline;"></i>
                 </div>
+
             </div>
             <div class="login-sidebar">
                 <h2 class="title">合作账号登录</h2>
