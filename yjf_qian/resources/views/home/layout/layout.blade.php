@@ -26,7 +26,7 @@
 
                 <div class="hy-nav-expand">
 
-                    <div class="hy-nav-title nav-main on" id="nav-main"><a href="http://www.yjf.com/type">分类</a><i class="icon-arrow"></i></div>
+                    <div class="hy-nav-title"><a href="http://www.yjf.com/type">分类</a></div>
 
 
 
