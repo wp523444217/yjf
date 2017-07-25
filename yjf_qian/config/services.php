@@ -28,6 +28,12 @@ return [
         'secret' => env('SES_SECRET'),
         'region' => 'us-east-1',
     ],
+    
+    'weibo' => [
+        'client_id' => env('WEIBO_KEY'),
+        'client_secret' => env('WEIBO_SECRET'),
+        'redirect' => env('WEIBO_REDIRECT_URI'),  
+    ],
 
     'stripe' => [
         'model'  => App\User::class,

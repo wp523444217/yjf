@@ -21,7 +21,7 @@
 
 
     <link rel='canonical' href='http://www.huya.com/l' />
-
+    <script src="//a.dwstatic.com/huya/main/lib/jq_ud_mod_4de7709.js" data-fixed="true"></script>
     <link type="text/css" rel="stylesheet" href="css/pages_modules_edf5626.css">
     <link type="text/css" rel="stylesheet" href="css/auto_combine_580c2_6a6309a.css">
     <!--HEAD_END-->

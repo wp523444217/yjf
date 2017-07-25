@@ -13,7 +13,6 @@
         .main-col{*padding-bottom: 140px;}
         </style>
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-
 <script type="text/javascript">
     var eu = '';
     var user = 1;
@@ -22,12 +21,7 @@
     var loginType = '';
 </script>
 <!-- 上传头像 s-->
-<script type="text/javascript" src="js/profile.js"></script>
-<script src="js/jquery.Jcrop.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/jquery.Jcrop.css" type="text/css" />
-<script type="text/javascript" src="js/jquery.uploadify-3.1.js?5"></script>
-<link rel="stylesheet" href="css/uploadify.css" type="text/css" />
-<link rel="stylesheet" href="css/yy-live.css" type="text/css" />
+
 <script type="text/javascript" src="js/ubbEditor.js"></script>
 <style>
     #fileImg-queue{position: absolute;z-index: -1;}
@@ -37,8 +31,10 @@
 <!-- 图片裁剪样式 -->
 <link rel="stylesheet" type="text/css" href="css/imgareaselect-default.css" />
 </head>
+
 <body>
-    
+    <!-- @extends('home/layout/layout') -->
+
 <script src="js/header.js?hiido_no=0&hiido_wid=www,_22dfa14"></script>
     <div class="admin-wrap">
         <style type="text/css">
@@ -97,7 +93,7 @@
                             <a menu="msg" href="http://www.live.com/msg">
                                 <span class="icon icon-msg"></span>
                                 <span class="title">
-                                    我的消息1
+                                    我的消息
                                 </span>
                             </a>
                         </li>
@@ -105,111 +101,10 @@
                             <a menu="noble" href="http://http://www.live.com/sub">
                                 <span class="icon icon-noble"></span>
                                 <span class="title">
-                                    我的贵族1
+                                    我的贵族
                                 </span>
                             </a>
                         </li>
-			            <!-- <li>
-                                <a menu="myRoom" href="http://i.huya.com/index.php?m=MyRoomAuditor">
-                                    <span class="icon icon-room"></span>
-                                    <span class="title">
-                                        房间管理
-                                    </span>
-                                </a>
-                            </li> -->
-                        <li>
-                            <a menu="myRoom" href="http://i.huya.com/index.php?m=MyRoomAuditor">
-                                <span class="icon icon-room"></span>
-                                <span class="title">
-                                    我的头衔
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a menu="money" href="http://http://www.live.com/money">
-                                <span class="icon icon-money"></span>
-                                <span class="title">
-                                    我的财产
-                                </span>
-                            </a>
-                        </li>
-                        <!-- <li>
-                            <a menu="guess" href="http://i.huya.com/index.php?m=Guess">
-                                <span class="icon icon-guess"></span>
-                                <span class="title">
-                                    我的竞猜
-                                </span>
-                            </a>
-                        </li> -->
-                        <!-- <li>
-                            <a menu="texas" href="http://i.huya.com/index.php?m=Texas">
-                                <span class="icon icon-teaxs"></span>
-                                <span class="title">
-                                    开心德州
-                                </span>
-                            </a>
-                        </li> -->
-                        <!--
-                        <li>
-                            <a menu="guard" href="http://i.huya.com/index.php?m=Guard&do=guardInfo">
-                                <span class="icon icon-protect"></span>
-                                <span class="title">
-                                    主播守护
-                                </span>
-                            </a>
-                        </li>
-                      
-                        <li>
-                            <a menu="badge"  href="http://i.huya.com/index.php?m=Badge">
-                                <span class="icon icon-badge"></span>
-                                 <span class="title">
-                                     我的徽章
-                                 </span>
-                            </a>
-                        </li>
-                        -->
-                        <!--
-                        <li>
-                            <a menu="basesetting" href="http://i.huya.com/index.php?m=PopOptions&do=userOption">
-                                <span class="icon icon-base"></span>
-                                <span class="title">
-                                    基础设置
-                                </span>
-                            </a>
-                        </li>
-                        -->
-                        <!-- <li id="mygift-li">
-                            <a menu="mygift" href="http://i.huya.com/index.php?m=MyGift&do=listMyGift">
-                                <span class="icon icon-welfare"></span>
-                                <span class="title">
-                                    我的福利
-                                </span>
-                            </a>
-                        </li> -->
-                        <!-- <li id="maw-li">
-                            <a menu="maw" href="http://i.huya.com/index.php?m=Maw">
-                                <span class="icon icon-maw"></span>
-                                <span class="title">
-                                    中奖查询
-                                </span>
-                            </a>
-                        </li> -->
-                        <!-- <li id="interaction_game-li">
-                            <a menu="interaction_game" href="http://i.huya.com/index.php?m=MonkeyTrick">
-                                <span class="icon icon-interaction"></span>
-                                <span class="title">
-                                    互动游戏
-                                </span>
-                            </a>
-                        </li> -->
-                        <!-- <li id="mygift-li">
-                            <a menu="userlevel" href="http://i.huya.com/index.php?m=UserLevel">
-                                <span class="icon icon-power"></span>
-                                <span class="title">
-                                    等级特权
-                                </span>
-                            </a>
-                        </li> -->
                         <li id="CDKey_change-li">
                             <a menu="cdkey" href="http://i.huya.com/index.php?m=CdKey">
                                 <span class="icon icon-CDKey_change"></span>
