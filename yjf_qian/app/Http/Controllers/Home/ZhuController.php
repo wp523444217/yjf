@@ -6,13 +6,20 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 class ZhuController extends Controller
 {
 	//个人中心
     public function index()
     {
-        $username = "admin";
+    	$session = new session(); 
+        $username = $session->get("username");
+        if($username == ""){
+			// echo (new IndexController ())->index();
+			$ctrl = \App::make(\App\Http\Controllers\home\IndexController::class);
+			echo \App::call([$ctrl, "index"]);die;
+        }
         $userdb = DB::table('fang_user');
         $user = $userdb
         ->join('fang_xinxi', 'fang_user.u_id', '=', 'fang_xinxi.u_id')

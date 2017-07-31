@@ -33,7 +33,6 @@
 </head>
 
 <body>
-    <!-- @extends('home/layout/layout') -->
 
 <script src="js/header.js?hiido_no=0&hiido_wid=www,_22dfa14"></script>
     <div class="admin-wrap">
@@ -74,7 +73,7 @@
                     <h3 class="header">&nbsp;个人中心</h3>
                     <ul class="icon-filter">
                         <li>
-                            <a menu="home" href="http://www.live.com/per">
+                            <a menu="home" href="/per">
                                 <span class="icon icon-home"></span>
                                 <span class="title">
                                     我的信息
@@ -82,7 +81,7 @@
                             </a>
                         </li>
                         <li>
-                            <a menu="subscribe" href="http://www.live.com/sub">
+                            <a menu="subscribe" href="/sub">
                                 <span class="icon icon-subscribe"></span>
                                 <span class="title">
                                     订阅与历史
@@ -90,18 +89,10 @@
                             </a>
                         </li>
                         <li id="msg-li">
-                            <a menu="msg" href="http://www.live.com/msg">
+                            <a menu="msg" href="/msg">
                                 <span class="icon icon-msg"></span>
                                 <span class="title">
                                     我的消息
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a menu="noble" href="http://http://www.live.com/sub">
-                                <span class="icon icon-noble"></span>
-                                <span class="title">
-                                    我的贵族
                                 </span>
                             </a>
                         </li>
@@ -127,7 +118,7 @@
                                 
                     <div class="to-be-anchor">
                         <p>想成为万人敬仰的主播？</p>
-                        <a href="http://www.huya.com/e/zhubo" target="_blank" class="btn btn-to-anchor">成为主播</a>
+                        <a href="/go" target="_blank" class="btn btn-to-anchor">成为主播</a>
                     </div>
            
             </div>
@@ -137,7 +128,7 @@
         <div class="main-col">
             <div class="scroll-content">
                 <div class="mod mod-user-center">
-                    <img style="width:120px;height:120px;" class="user_icon" src="images/49e0a5e282dcd57f77a9a8dce946c9_180_135.jpg" alt="头像">
+                    <img style="width:120px;height:120px;" class="user_icon" src="<?=$user->u_img?>" alt="头像">
                     <img class="img_hover" src="images/header_hover.png" alt="上传图像">
                                         <form id="img_submit" enctype="multipart/form-data" method="post" action="http://i.huya.com/index.php?m=Home&do=ajaxUlogo">
                         <input id="fileImg" type="file" name="screenshot">
@@ -172,30 +163,16 @@
                             <span class=""><?=$user->x_birthday?></span>
                             <span class="user_ps"><?=$user->x_desc?></span>
                         </p>
-                        <div class="detail table-badge" id="grow_level">
-                            <!-- <span style="background-position-y: -11px;" class="grow_level lv_1"></span> -->
-                            <span>LV1</span>
-                            <span class="contact">
-                                <span class="number">5/200</span>
-                                <span class="part" style="width:2.5%;"></span>
-                                <span class="grow_msg" style="top:-32px;left:0px;">
-                                                                        <span class="grow_msg_span">今日获得<span class="num">0</span>点经验值，升级还需<span class="num">195</span>点</span>
-                                                                        <i class="up_arrows"></i>
-                                </span>
-                            </span>
-                            <span>LV2</span>
-                            <a class="question" href="javascript:void(0);" onclick="TT.emit('TTUserLvIntro',{level:1,firstInfo:true});">等级加速</a>
-                        </div>
-                        <ul id="my_estate">
+                       <ul id="my_estate">
                                                             <li>
                                     <span class="tool">
                                         <i class="icon icon-gold"></i>
                                     </span>
                                     <span class="tool-info">
-                                        <i class="num hidden" style="min-width:28px;">0</i>
-                                                                                    <span class="hidden tool_msg">
+                                        <i style="min-width:28px;" class="num"><?=$user->jin_d?></i>
+                                                                                    <span class="tool_msg hidden">
                                                 <i class="up_arrows"></i>
-                                                <span class="tool_msg_span">金豆：0</span>
+                                                <span class="tool_msg_span">金豆：<?=$user->jin_d?></span>
                                             </span>
                                                                                 <i class="line"></i>
                                     </span>
@@ -205,10 +182,10 @@
                                         <i class="icon icon-coupon"></i>
                                     </span>
                                     <span class="tool-info">
-                                        <i class="num hidden" style="min-width:28px;">0</i>
-                                                                                    <span class="hidden tool_msg">
+                                        <i style="min-width:28px;" class="num"><?=$user->jin_d_j?></i>
+                                                                                    <span class="tool_msg hidden">
                                                 <i class="up_arrows"></i>
-                                                <span class="tool_msg_span">金豆券：0</span>
+                                                <span class="tool_msg_span">金豆券：<?=$user->jin_d_j?></span>
                                             </span>
                                                                                 <i class="line"></i>
                                     </span>
@@ -218,22 +195,22 @@
                                         <i class="icon icon-silver"></i>
                                     </span>
                                     <span class="tool-info">
-                                        <i class="num hidden" style="min-width:28px;">0</i>
+                                        <i style="min-width:28px;" class="num"><?=$user->yin_d?></i>
                                                                                     <span class="hidden tool_msg">
                                                 <i class="up_arrows"></i>
-                                                <span class="tool_msg_span">银豆：0</span>
+                                                <span class="tool_msg_span">银豆：<?=$user->jin_d?></span>
                                             </span>
                                                                                 <i class="line"></i>
                                     </span>
                                 </li>
                                                         <li>
                                 <span>
-                                    <a href="http://i.huya.com/index.php?m=MyAccount&do=myAccount" class="money_detail">资产明细</a>
+                                    <a class="money_detail" href="http://i.huya.com/index.php?m=MyAccount&amp;do=myAccount">资产明细</a>
                                 </span>
                             </li>
                             <li>
                                 <span>
-                                    <a class="btn" id="jdRechargeBtn" href="javascript:void(0);">充值</a>
+                                    <a href="javascript:void(0);" id="jdRechargeBtn" class="btn">充值</a>
                                 </span>
                             </li>
                         </ul>
